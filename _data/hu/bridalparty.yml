@@ -1,23 +1,31 @@
-- name: Prénom
+- name: Somogyi Barbi
   pic: 1
-  position: Rôle
+  position: Díszlány
 
-- name: Prénom
+- name: Név
   pic: 2
-  position: Rôle
+  position: Koszorúslány
 
-- name: Prénom
+- name: Név
   pic: 3
-  position: Rôle
+  position: Koszorúslány
 
-- name: Prénom
+- name: Név
   pic: 4
-  position: Rôle
+  position: Koszorúslány
 
-- name: Prénom
+- name: Név
   pic: 5
-  position: Rôle
+  position: Násznagy
 
-- name: Prénom
+- name: Név
   pic: 6
-  position: Rôle
+  position: Vőfély
+
+- name: Név
+  pic: 7
+  position: Vőfély
+
+- name: Név
+  pic: 8
+  position: Vőfély

@@ -1,23 +1,31 @@
-- name: Prénom
+- name: Име
   pic: 1
-  position: Rôle
+  position: Роля
 
-- name: Prénom
+- name: Име
   pic: 2
-  position: Rôle
+  position: Роля
 
-- name: Prénom
+- name: Име
   pic: 3
-  position: Rôle
+  position: Роля
 
-- name: Prénom
+- name: Име
   pic: 4
-  position: Rôle
+  position: Роля
 
-- name: Prénom
+- name: Име
   pic: 5
-  position: Rôle
+  position: Роля
 
-- name: Prénom
+- name: Име
   pic: 6
-  position: Rôle
+  position: Роля
+
+  - name: Име
+  pic: 7
+  position: Роля
+
+  - name: Име
+  pic: 8
+  position: Роля

@@ -1,23 +1,31 @@
-- name: Name
+- name: Barbi Somogyi
   pic: 1
-  position: Role
+  position: Maid of Honour
 
 - name: Name
   pic: 2
-  position: Role
+  position: Bridesmaid
 
 - name: Name
   pic: 3
-  position: Role
+  position: Bridesmaid
 
 - name: Name
   pic: 4
-  position: Role
+  position: Bridesmaid
 
 - name: Name
   pic: 5
-  position: Role
+  position: Best Man
 
 - name: Name
   pic: 6
-  position: Role
+  position: Groomsman
+
+  - name: Name
+  pic: 7
+  position: Groomsman
+
+  - name: Name
+  pic: 8
+  position: Groomsman

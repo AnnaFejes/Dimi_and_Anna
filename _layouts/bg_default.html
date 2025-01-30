@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+  {% include /bg_data/head.html %}
+
+
+    <body id="page-top" class="index">
+
+    {% include /bg_data/header.html %}
+    {% include /bg_data/events.html %}
+    {% include /bg_data/venue.html %}
+    {% include /bg_data/travel.html %}
+    {% include /bg_data/stay.html %}
+    {% include /bg_data/things_to_do.html %}
+    {% include /bg_data/our_story.html %}
+    {% include /bg_data/bridal_party.html %}
+    {% include /bg_data/FAQ.html %}
+    {% include /bg_data/contact.html %}
+    {% include /bg_data/footer.html %}
+    {% include /bg_data/modals.html %}
+    {% include /bg_data/js.html %}
+    {% if jekyll.environment == 'production' %}
+        {% include analytics.html %}
+    {% endif %}
+
+    </body>
+</html>

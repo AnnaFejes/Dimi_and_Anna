@@ -1,53 +1,53 @@
-- title: Activity
-  subtitle: Description
+- title: Plovdiv
+  subtitle: The historical old town & city centre
   modal-id: 1
   img: 1.jpg
   thumbnail: 1.jpg
-  drive: X minutes
-  link: https://goo.gl/maps/MY49ntTHETuat5jN8
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique rutrum mauris nec rutrum. Nam sem ex, bibendum vitae velit eu, tempor sagittis nunc. Donec nunc erat, tempor ac finibus vel, molestie eget augue. Curabitur eleifend venenatis mi, sagittis faucibus ex pellentesque in. Etiam efficitur, augue sed faucibus laoreet, ligula diam euismod ipsum, facilisis pharetra sapien tortor eget nibh. Nulla vel purus suscipit, rutrum diam.
+  drive: 30 minutes (from venue)
+  link: https://maps.app.goo.gl/jKdbCFHWYCjy8C4y7
+  description: There are various, beautiful parts of the old town that is worth a visit from the Ancient Theartre to the Regional Ethnographic museum, or just for a beautiful stroll. In the city centre one can find the Djumaya - a mosque from the Thracian times with an authentic Turkish cafe at the bac and a view to the ancient stadium of Philipopolis on the side. For artisty people Kapana is the place - from tasty, food to various craftsmen & lovely streetart, it has its own unique athmosphere. For those, who are more interested in the Soviet era & would like to climb a hill, the statue of Alyosha offers a beautiful view over the Plovdiv.
 
-- title: Activity
-  subtitle: Description
+- title: Bachkovo Monastery
+  subtitle: An Orthodox monastery in the mountains
   modal-id: 2
   img: 2.jpg
   thumbnail: 2.jpg
-  drive: X minutes
-  link: https://goo.gl/maps/MY49ntTHETuat5jN8
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique rutrum mauris nec rutrum. Nam sem ex, bibendum vitae velit eu, tempor sagittis nunc. Donec nunc erat, tempor ac finibus vel, molestie eget augue. Curabitur eleifend venenatis mi, sagittis faucibus ex pellentesque in. Etiam efficitur, augue sed faucibus laoreet, ligula diam euismod ipsum, facilisis pharetra sapien tortor eget nibh. Nulla vel purus suscipit, rutrum diam.
+  drive: 1 hour (from venue, 35 minutes from Plovdiv)
+  link: https://maps.app.goo.gl/D64PxGhPZh1AB9xi7
+  description: An Eastern Orthodox monastery establsihed in 1083 - with beautiful Orthodox art & lovely walks around.
 
-- title: Activity
-  subtitle: Description
+- title: Hisarya
+  subtitle: A Roman spa resort
   modal-id: 3
   img: 3.jpg
   thumbnail: 3.jpg
-  drive: X minutes
-  link: https://goo.gl/maps/MY49ntTHETuat5jN8
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique rutrum mauris nec rutrum. Nam sem ex, bibendum vitae velit eu, tempor sagittis nunc. Donec nunc erat, tempor ac finibus vel, molestie eget augue. Curabitur eleifend venenatis mi, sagittis faucibus ex pellentesque in. Etiam efficitur, augue sed faucibus laoreet, ligula diam euismod ipsum, facilisis pharetra sapien tortor eget nibh. Nulla vel purus suscipit, rutrum diam.
+  drive: 1.5 hours (from venue, 50 minutes from Plovdiv)
+  link: https://maps.app.goo.gl/GDNtZEg148q2nnJq9
+  description: A town known for its healing mineral springs, historic ruins and calm athmosphere.
 
-- title: Activity
-  subtitle: Description
+- title: Nessebar
+  subtitle: A historical city on the coast of the Black Sea
   modal-id: 4
   img: 4.jpg
   thumbnail: 4.jpg
-  drive: X minutes
-  link: https://goo.gl/maps/MY49ntTHETuat5jN8
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique rutrum mauris nec rutrum. Nam sem ex, bibendum vitae velit eu, tempor sagittis nunc. Donec nunc erat, tempor ac finibus vel, molestie eget augue. Curabitur eleifend venenatis mi, sagittis faucibus ex pellentesque in. Etiam efficitur, augue sed faucibus laoreet, ligula diam euismod ipsum, facilisis pharetra sapien tortor eget nibh. Nulla vel purus suscipit, rutrum diam.
+  drive: 3.5 hours (from venue, 3 hours from Plovdiv)
+  link: https://maps.app.goo.gl/wZqcYJMWrsspyirg8
+  description: A historical town on the coast with sandy beaches & clear waters. While this is a bit far from the venue - if one stays longer in the Bulgarian summer a refreshing dive is needed.
 
-- title: Activity
-  subtitle: Description
+- title: Asen's Fortress
+  subtitle: A medieval, mountaintop fortress
   modal-id: 5
   img: 5.jpg
   thumbnail: 5.jpg
-  drive: X minutes
-  link: https://goo.gl/maps/MY49ntTHETuat5jN8
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique rutrum mauris nec rutrum. Nam sem ex, bibendum vitae velit eu, tempor sagittis nunc. Donec nunc erat, tempor ac finibus vel, molestie eget augue. Curabitur eleifend venenatis mi, sagittis faucibus ex pellentesque in. Etiam efficitur, augue sed faucibus laoreet, ligula diam euismod ipsum, facilisis pharetra sapien tortor eget nibh. Nulla vel purus suscipit, rutrum diam.
+  drive: 50 minutes (from venue, 30 minutes from Plovdiv)
+  link: https://maps.app.goo.gl/Gy5oNa1kfdyXHxb28
+  description: A short hike ike up to the monastery (30 minutes) or drive up to the fortress - the breathtaking panorama is absolutely worth it! The fortress played significant role in Bulgarian history, several battles were fought to defend/capture it.
 
-- title: Activity
-  subtitle: Description
+- title: Seven Rila Lakes
+  subtitle: Lakes in the Rila National Park
   modal-id: 6
   img: 6.jpg
   thumbnail: 6.jpg
-  drive: X minutes
-  link: https://goo.gl/maps/MY49ntTHETuat5jN8
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique rutrum mauris nec rutrum. Nam sem ex, bibendum vitae velit eu, tempor sagittis nunc. Donec nunc erat, tempor ac finibus vel, molestie eget augue. Curabitur eleifend venenatis mi, sagittis faucibus ex pellentesque in. Etiam efficitur, augue sed faucibus laoreet, ligula diam euismod ipsum, facilisis pharetra sapien tortor eget nibh. Nulla vel purus suscipit, rutrum diam.
+  drive: 3 hours (from venue, 2.5 hours from Plovdiv)
+  link: https://maps.app.goo.gl/RmXj4GUcFfbvnMAJ9
+  description: Scenic mountain lakes with a chairlift & hiking trails with several waterfalls & other peaks nearby. Best visited on the way to or from Sofia (if you fly from there).

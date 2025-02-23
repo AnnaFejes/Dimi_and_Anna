@@ -1,53 +1,53 @@
-- title: Látnivaló
-  subtitle: Description
+- title: Plovdiv
+  subtitle: A történelmi óváros és a városközpont
   modal-id: 1
   img: 1.jpg
   thumbnail: 1.jpg
-  drive: X minutes
-  link: https://goo.gl/maps/MY49ntTHETuat5jN8
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique rutrum mauris nec rutrum. Nam sem ex, bibendum vitae velit eu, tempor sagittis nunc. Donec nunc erat, tempor ac finibus vel, molestie eget augue. Curabitur eleifend venenatis mi, sagittis faucibus ex pellentesque in. Etiam efficitur, augue sed faucibus laoreet, ligula diam euismod ipsum, facilisis pharetra sapien tortor eget nibh. Nulla vel purus suscipit, rutrum diam.
+  drive: 30 perc (a helyszíntől)
+  link: https://maps.app.goo.gl/jKdbCFHWYCjy8C4y7
+  description: Az óváros különböző, gyönyörű részeit érdemes felkeresni az Ókori Színháztól a Regionális Néprajzi Múzeumig, vagy csak egy szép sétára. A város központjában található a Djumaya - a trák időkből származó mecset, melynek végén egy autentikus török kávézó, oldalt pedig a Philipopolis ősi stadionjára nyílik kilátás. A művészek számára a Kapana a tökéletes kerület - az ízletes ételektől a különféle mesterembereken át a szép streetart-ig, itt minden megtalalható. Azok számára, akik jobban érdeklődnek a szovjet korszak iránt, és szeretnének egy dombra mászni, Aljosa szobra gyönyörű kilátást nyújt Plovdivra.
 
-- title: Látnivaló
-  subtitle: Description
+- title: Bachkovo kolostor
+  subtitle: Ortodox kolostor a hegyekben
   modal-id: 2
   img: 2.jpg
   thumbnail: 2.jpg
-  drive: X minutes
-  link: https://goo.gl/maps/MY49ntTHETuat5jN8
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique rutrum mauris nec rutrum. Nam sem ex, bibendum vitae velit eu, tempor sagittis nunc. Donec nunc erat, tempor ac finibus vel, molestie eget augue. Curabitur eleifend venenatis mi, sagittis faucibus ex pellentesque in. Etiam efficitur, augue sed faucibus laoreet, ligula diam euismod ipsum, facilisis pharetra sapien tortor eget nibh. Nulla vel purus suscipit, rutrum diam.
+  drive: 1 óra (a helyszíntől, Plovdivtól 35 perc)
+  link: https://maps.app.goo.gl/D64PxGhPZh1AB9xi7
+  description: 1083-ban alapított keleti ortodox kolostor gyönyörű ortodox művészettel és szép sétákkal.
 
-- title: Látnivaló
-  subtitle: Description
+- title: Hisarya
+  subtitle: Római gyógyfürdő (nem Aquincum)
   modal-id: 3
   img: 3.jpg
   thumbnail: 3.jpg
-  drive: X minutes
-  link: https://goo.gl/maps/MY49ntTHETuat5jN8
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique rutrum mauris nec rutrum. Nam sem ex, bibendum vitae velit eu, tempor sagittis nunc. Donec nunc erat, tempor ac finibus vel, molestie eget augue. Curabitur eleifend venenatis mi, sagittis faucibus ex pellentesque in. Etiam efficitur, augue sed faucibus laoreet, ligula diam euismod ipsum, facilisis pharetra sapien tortor eget nibh. Nulla vel purus suscipit, rutrum diam.
+  drive: 1.5 óra (a helyszíntől, Plovdivtól 50 perc)
+  link: https://maps.app.goo.gl/GDNtZEg148q2nnJq9
+  description: Gyógyító ásványforrásairól, történelmi romjairól és nyugodt légköréről ismert város.
 
-- title: Látnivaló
-  subtitle: Description
+- title: Neszebar
+  subtitle: Történelmi város a Fekete-tenger partján
   modal-id: 4
   img: 4.jpg
   thumbnail: 4.jpg
-  drive: X minutes
-  link: https://goo.gl/maps/MY49ntTHETuat5jN8
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique rutrum mauris nec rutrum. Nam sem ex, bibendum vitae velit eu, tempor sagittis nunc. Donec nunc erat, tempor ac finibus vel, molestie eget augue. Curabitur eleifend venenatis mi, sagittis faucibus ex pellentesque in. Etiam efficitur, augue sed faucibus laoreet, ligula diam euismod ipsum, facilisis pharetra sapien tortor eget nibh. Nulla vel purus suscipit, rutrum diam.
+  drive: 3.5 óra (a helyszíntől, Plovdivtól 3 óra)
+  link: https://maps.app.goo.gl/wZqcYJMWrsspyirg8
+  description: Történelmi város a tengerparton homokos strandokkal és kristálytiszta vizekkel. Bár ez egy kicsit messze van a helyszíntől - ha valaki hosszabb ideig marad a Bulgáriaban a nyáron, akkor egy frissítő csobbanás jól fog esni.
 
-- title: Látnivaló
-  subtitle: Description
+- title: Asen erőd
+  subtitle: Középkori erőd a hegy tetején
   modal-id: 5
   img: 5.jpg
   thumbnail: 5.jpg
-  drive: X minutes
-  link: https://goo.gl/maps/MY49ntTHETuat5jN8
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique rutrum mauris nec rutrum. Nam sem ex, bibendum vitae velit eu, tempor sagittis nunc. Donec nunc erat, tempor ac finibus vel, molestie eget augue. Curabitur eleifend venenatis mi, sagittis faucibus ex pellentesque in. Etiam efficitur, augue sed faucibus laoreet, ligula diam euismod ipsum, facilisis pharetra sapien tortor eget nibh. Nulla vel purus suscipit, rutrum diam.
+  drive: 50 perc (a helyszíntől, Plovdivtól 30 perc)
+  link: https://maps.app.goo.gl/Gy5oNa1kfdyXHxb28
+  description: A kolostor megközelíthető egy rövid túróval (30 perc) vagy autóval - a lélegzetelállító panoráma megéri! Az erőd jelentős szerepet játszott a bolgár történelemben, számos csatát vívtak a védelméért/elfoglalásáért.
 
-- title: Látnivaló
-  subtitle: Description
+- title: Hét-tó völgye a Rila-hegységben
+  subtitle: Tavak a Rila Nemzeti Parkban
   modal-id: 6
   img: 6.jpg
   thumbnail: 6.jpg
-  drive: X minutes
-  link: https://goo.gl/maps/MY49ntTHETuat5jN8
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique rutrum mauris nec rutrum. Nam sem ex, bibendum vitae velit eu, tempor sagittis nunc. Donec nunc erat, tempor ac finibus vel, molestie eget augue. Curabitur eleifend venenatis mi, sagittis faucibus ex pellentesque in. Etiam efficitur, augue sed faucibus laoreet, ligula diam euismod ipsum, facilisis pharetra sapien tortor eget nibh. Nulla vel purus suscipit, rutrum diam.
+  drive: 3 óra (a helyszíntől, Plovdivtól 2.5 óra)
+  link: https://maps.app.goo.gl/RmXj4GUcFfbvnMAJ9
+  description: Festői hegyi tavak libegővel és túraútvonalakkal, számos közeli vízeséssel és több, a nemzeti parkhoz tartozó hegycsúcsokra nyíló kilátással. A legegyszerűbb meglátogatni Szófiába menet vagy onnan indulva (ha az valaki onnan repül).

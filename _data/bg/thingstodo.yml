@@ -1,53 +1,53 @@
-- title: Látnivaló
-  subtitle: Description
+- title: Пловдив
+  subtitle: Историческият стар град и центърът на града
   modal-id: 1
   img: 1.jpg
   thumbnail: 1.jpg
-  drive: X minutes
+  drive: 30 минути (от мястото)
   link: https://maps.app.goo.gl/jKdbCFHWYCjy8C4y7
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique rutrum mauris nec rutrum. Nam sem ex, bibendum vitae velit eu, tempor sagittis nunc. Donec nunc erat, tempor ac finibus vel, molestie eget augue. Curabitur eleifend venenatis mi, sagittis faucibus ex pellentesque in. Etiam efficitur, augue sed faucibus laoreet, ligula diam euismod ipsum, facilisis pharetra sapien tortor eget nibh. Nulla vel purus suscipit, rutrum diam.
+  description: Има различни красиви части от стария град, които си заслужава да посетите от Античния театър до Регионалния етнографски музей или просто за красива разходка. В центъра на града се намира Джумая - джамия от тракийско време с автентично турско кафене на бака и гледка към античния стадион на Филипополис отстрани. За артистичните хора Капана е мястото - от вкусно, храна до различни занаятчийски и красиво улично изкуство, има своя уникална атмосфера. За тези, които се интересуват повече от съветската епоха и искат да се изкачат на хълм, статуята на Альоша предлага красива гледка към Пловдив.
 
-- title: Látnivaló
-  subtitle: Description
+- title: Бачковски манастир
+  subtitle: Православен манастир в планината
   modal-id: 2
   img: 2.jpg
   thumbnail: 2.jpg
-  drive: X minutes
+  drive: 1 час (от мястото, 35 минути от Пловдив)
   link: https://maps.app.goo.gl/D64PxGhPZh1AB9xi7
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique rutrum mauris nec rutrum. Nam sem ex, bibendum vitae velit eu, tempor sagittis nunc. Donec nunc erat, tempor ac finibus vel, molestie eget augue. Curabitur eleifend venenatis mi, sagittis faucibus ex pellentesque in. Etiam efficitur, augue sed faucibus laoreet, ligula diam euismod ipsum, facilisis pharetra sapien tortor eget nibh. Nulla vel purus suscipit, rutrum diam.
+  description: Източноправославен манастир, основан през 1083 г. - с красиво православно изкуство и прекрасни разходки наоколо.
 
-- title: Látnivaló
-  subtitle: Description
+- title: Хисаря
+  subtitle: Римски спа курорт
   modal-id: 3
   img: 3.jpg
   thumbnail: 3.jpg
-  drive: X minutes
+  drive: 1.5 часа (от мястото, 50 минути от Пловдив)
   link: https://maps.app.goo.gl/GDNtZEg148q2nnJq9
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique rutrum mauris nec rutrum. Nam sem ex, bibendum vitae velit eu, tempor sagittis nunc. Donec nunc erat, tempor ac finibus vel, molestie eget augue. Curabitur eleifend venenatis mi, sagittis faucibus ex pellentesque in. Etiam efficitur, augue sed faucibus laoreet, ligula diam euismod ipsum, facilisis pharetra sapien tortor eget nibh. Nulla vel purus suscipit, rutrum diam.
+  description: Град, известен със своите лечебни минерални извори, исторически руини и спокойна атмосфера.
 
-- title: Látnivaló
-  subtitle: Description
+- title: Несебър
+  subtitle: Исторически град на брега на Черно море
   modal-id: 4
   img: 4.jpg
   thumbnail: 4.jpg
-  drive: X minutes
+  drive: 3.5 часа (от мястото, 3 часа от Пловдив)
   link: https://maps.app.goo.gl/wZqcYJMWrsspyirg8
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique rutrum mauris nec rutrum. Nam sem ex, bibendum vitae velit eu, tempor sagittis nunc. Donec nunc erat, tempor ac finibus vel, molestie eget augue. Curabitur eleifend venenatis mi, sagittis faucibus ex pellentesque in. Etiam efficitur, augue sed faucibus laoreet, ligula diam euismod ipsum, facilisis pharetra sapien tortor eget nibh. Nulla vel purus suscipit, rutrum diam.
+  description: Исторически град на брега с пясъчни плажове и чисти води. Въпреки че това е малко далеч от мястото - ако човек остане по-дълго в българското лято, е необходимо освежаващо гмуркане.
 
-- title: Látnivaló
-  subtitle: Description
+- title: Асеновата крепост
+  subtitle: Средновековна крепост на върха на планината
   modal-id: 5
   img: 5.jpg
   thumbnail: 5.jpg
-  drive: X minutes
+  drive: 50 минути (от мястото, 30 минути от Пловдив)
   link: https://maps.app.goo.gl/Gy5oNa1kfdyXHxb28
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique rutrum mauris nec rutrum. Nam sem ex, bibendum vitae velit eu, tempor sagittis nunc. Donec nunc erat, tempor ac finibus vel, molestie eget augue. Curabitur eleifend venenatis mi, sagittis faucibus ex pellentesque in. Etiam efficitur, augue sed faucibus laoreet, ligula diam euismod ipsum, facilisis pharetra sapien tortor eget nibh. Nulla vel purus suscipit, rutrum diam.
+  description: Кратък преход до манастира (30 минути) или шофиране до крепостта - спиращата дъха панорама абсолютно си заслужава! Крепостта играе важна роля в българската история, водени са няколко битки за нейната защита/превземане.
 
-- title: Látnivaló
-  subtitle: Description
+- title: Седемте рилски езера
+  subtitle: Езера в Национален парк Рила
   modal-id: 6
   img: 6.jpg
   thumbnail: 6.jpg
-  drive: X minutes
+  drive: 3 часа (от мястото, 2.5 часа от Пловдив)
   link: https://maps.app.goo.gl/RmXj4GUcFfbvnMAJ9
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique rutrum mauris nec rutrum. Nam sem ex, bibendum vitae velit eu, tempor sagittis nunc. Donec nunc erat, tempor ac finibus vel, molestie eget augue. Curabitur eleifend venenatis mi, sagittis faucibus ex pellentesque in. Etiam efficitur, augue sed faucibus laoreet, ligula diam euismod ipsum, facilisis pharetra sapien tortor eget nibh. Nulla vel purus suscipit, rutrum diam.
+  description: Живописни планински езера със седалков лифт и туристически пътеки с няколко водопада и други върхове наблизо. Най-добре посещаван на път за или от София (ако летите от там).

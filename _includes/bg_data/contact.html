@@ -60,4 +60,57 @@
             </div>
         </div>
     </div>
+
+
+    <h2>RSVP Form</h2>
+
+    <form id="rsvpForm" action="https://formspree.io/f/xzzeznjk" method="POST">
+        <label for="numGuests">Number of Guests:</label>
+        <select id="numGuests" name="numGuests" onchange="updateGuestFields()">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+
+        <div id="guestFields"></div>
+
+        <button type="submit">Submit RSVP</button>
+    </form>
+
+    <script>
+        function updateGuestFields() {
+            let numGuests = document.getElementById("numGuests").value;
+            let guestFields = document.getElementById("guestFields");
+
+            // Clear previous guest entries
+            guestFields.innerHTML = "";
+
+            for (let i = 1; i <= numGuests; i++) {
+                let guestDiv = document.createElement("div");
+                guestDiv.classList.add("guest-details");
+
+                guestDiv.innerHTML = `
+                    <h4>Guest ${i}</h4>
+                    <label for="guestName${i}">Name:</label>
+                    <input type="text" id="guestName${i}" name="guestName${i}" required>
+                    
+                    <label for="menuChoice${i}">Menu Choice:</label>
+                    <select id="menuChoice${i}" name="menuChoice${i}" required>
+                        <option value="vegetarian">Vegetarian</option>
+                        <option value="chicken">Chicken</option>
+                        <option value="beef">Beef</option>
+                        <option value="fish">Fish</option>
+                    </select>
+                `;
+
+                guestFields.appendChild(guestDiv);
+            }
+        }
+
+        // Initialize the form with the default number of guests
+        updateGuestFields();
+    </script>
+
 </section>

@@ -26,7 +26,7 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">Contact Us</h2>
-                <h3 class="section-subheading text-muted">Or send us an email at <a href="mailto:petsgetsmarried@gmail.com">petsgetmarried@gmail.com</a>.</h3>
+                <h3 class="section-subheading text-muted">Or send us an email at <a href="mailto:anna.fejes.95@gmail.com">anna.fejes.95@gmail.com</a>.</h3>
             </div>
         </div>
         <div class="row">
@@ -62,10 +62,8 @@
     </div>
 
 
-    <h2>RSVP Form</h2>
-
-    <form id="rsvpForm" action="https://formspree.io/f/xzzeznjk" method="POST">
-        <label for="numGuests">Number of Guests:</label>
+    <form class="ajaxForm" id="rsvpForm" action="https://formspree.io/f/xzzeznjk" method="POST">
+        <label for="numGuests">Number of Guests in your party:</label>
         <select id="numGuests" name="numGuests" onchange="updateGuestFields()">
             <option value="1">1</option>
             <option value="2">2</option>
@@ -92,23 +90,84 @@
                 guestDiv.classList.add("guest-details");
 
                 guestDiv.innerHTML = `
-                    <h4>Guest ${i}</h4>
+                    <h4 class="service-heading" id="guestTitle${i}">Guest ${i}</h4>
                     <label for="guestName${i}">Name:</label>
                     <input type="text" id="guestName${i}" name="guestName${i}" required>
                     
                     <label for="menuChoice${i}">Menu Choice:</label>
                     <select id="menuChoice${i}" name="menuChoice${i}" required>
-                        <option value="vegetarian">Vegetarian</option>
-                        <option value="chicken">Chicken</option>
-                        <option value="beef">Beef</option>
-                        <option value="fish">Fish</option>
+                        <option value="Menu_1A">Vegetarian</option>
+                        <option value="Menu_1B">Chicken</option>
+                        <option value="Menu_2">Beef</option>
+                        <option value="Menu_3">Fish</option>
+                        <option value="Alternative">Other (Special Request)</option>
                     </select>
+
+                    <input type="text" id="specialRequest${i}" name="specialRequest${i}" class="hidden" placeholder="Please specify dietary needs">
+
+                    <label>Which languages are you comfortable speaking in?</label>
+                    <div class="language-options">
+                        <input type="checkbox" id="langEnglish${i}" name="languages${i}" value="EN">
+                        <label for="langEnglish${i}">English</label>
+
+                        <input type="checkbox" id="langBulgarian${i}" name="languages${i}" value="BG">
+                        <label for="langBulgarian${i}">Bulgarian</label>
+
+                        <input type="checkbox" id="langHungarian${i}" name="languages${i}" value="HU">
+                        <label for="langHungarian${i}">Hungarian</label>
+
+                        <input type="checkbox" id="langSwedish${i}" name="languages${i}" value="SW">
+                        <label for="langSwedish${i}">Swedish</label>
+
+                        <input type="checkbox" id="langPolish${i}" name="languages${i}" value="PO">
+                        <label for="langPolish${i}">Polish</label>
+
+                        <input type="checkbox" id="langOther${i}" name="languages${i}" value="Other" onchange="toggleLanguageOther(${i})">
+                        <label for="langOther${i}">Other</label>
+                    </div>
+
+                    <input type="text" id="languageOther${i}" name="languageOther${i}" class="hidden" placeholder="Please write any other languages that you are comfortable speaking with other guests.">
                 `;
 
                 guestFields.appendChild(guestDiv);
             }
         }
 
+        function updateGuestTitle(guestIndex) {
+            let nameInput = document.getElementById(`guestName${guestIndex}`).value;
+            let guestTitle = document.getElementById(`guestTitle${guestIndex}`);
+
+            // Update the title with the guest's name or revert if empty
+            guestTitle.textContent = nameInput ? `Guest: ${nameInput}` : `Guest ${guestIndex}`;
+        }
+
+        function toggleSpecialRequest(guestIndex) {
+            let menuSelect = document.getElementById(`menuChoice${guestIndex}`);
+            let specialRequestInput = document.getElementById(`specialRequest${guestIndex}`);
+
+            if (menuSelect.value === "Alternative") {
+                specialRequestInput.classList.remove("hidden");
+                specialRequestInput.setAttribute("required", "true");
+            } else {
+                specialRequestInput.classList.add("hidden");
+                specialRequestInput.removeAttribute("required");
+                specialRequestInput.value = ""; // Clear the field when not needed
+            }
+        }
+
+        function toggleLanguageOther(guestIndex) {
+            let otherCheckbox = document.getElementById(`langOther${guestIndex}`);
+            let otherInput = document.getElementById(`languageOther${guestIndex}`);
+
+            if (otherCheckbox.checked) {
+                otherInput.classList.remove("hidden");
+                otherInput.setAttribute("required", "true");
+            } else {
+                otherInput.classList.add("hidden");
+                otherInput.removeAttribute("required");
+                otherInput.value = ""; // Clear field if unchecked
+            }
+        }
         // Initialize the form with the default number of guests
         updateGuestFields();
     </script>

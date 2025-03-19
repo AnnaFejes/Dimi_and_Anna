@@ -8,10 +8,18 @@
         </div>
         <div class="row">
             <div class="col-lg-12">
-                <form class="ajaxForm" action="https://formspree.io/f/xzzeznjk" method="POST">
+                <form class="ajaxForm" action="YOUR_FORM_CARRY_ENDPOINT" method="POST">
+                    <div class="form-group text-center">
+                        <label for="guestCountSelect">Number of Guests:</label>
+                        <select id="guestCountSelect" class="form-control" onchange="updateGuestForms()">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
                     <div id="guest-container"></div>
                     <div class="col-lg-12 text-center">
-                        <button type="button" class="btn btn-xl" onclick="addGuest()">Add Guest</button>
                         <button type="submit" class="btn btn-xl">Submit RSVP</button>
                     </div>
                 </form>
@@ -21,25 +29,19 @@
 </section>
 
 <script>
-let guestCount = 0;
-function addGuest() {
-    guestCount++;
-    let guestHtml = `
-        <div class="row guest-entry">
-            <div class="col-md-6">
-                <h4 class="service-heading" id="guestTitle${guestCount}">Guest ${guestCount}</h4>
+function updateGuestForms() {
+    let guestCount = document.getElementById("guestCountSelect").value;
+    let guestContainer = document.getElementById("guest-container");
+    guestContainer.innerHTML = "";
 
-                <label for="guestName${i}">Name:</label>
-                <input type="text" class="form-control" placeholder="Guest Name" id="guestName${guestCount}" name="guestName${guestCount}" required oninput="updateGuestTitle(${guestCount})">
-                
-                <label for="menuChoice${i}">Menu Choice:</label>
-                <select class="form-control" id="mealChoice${guestCount}" name="mealChoice${guestCount}" onchange="toggleSpecialMeal(${guestCount})">
-                    <option value="Menu_1A">Vegetarian</option>
-                    <option value="Menu_1B">Chicken</option>
-                    <option value="Menu_2">Beef</option>
-                    <option value="Menu_3">Fish</option>
-                    <option value="Alternative">Other (Special Request)</option>
-                </select>
+    for (let i = 1; i <= guestCount; i++) {
+        let guestHtml = `
+            <div class="row guest-entry">
+                <div class="col-md-6">
+                    <h4 class="service-heading" id="guestTitle${guestCount}">Guest ${guestCount}</h4>
+
+                    <label for="guestName${i}">Name:</label>
+                    <input type="text" class="form-control" placeholder="Guest Name" id="guestName${guestCount}" name="guestName${guestCount}" required oninput="updateGuestTitle(${guestCount})">
 
                     <select id="menuChoice${i}" name="menuChoice${i}" required onchange="toggleSpecialRequest(${i})">
                         <option value="Menu_1A">Vegetarian</option>
@@ -49,36 +51,41 @@ function addGuest() {
                         <option value="Alternative">Other (Special Request)</option>
                     </select>
 
-                <input type="text" class="form-control hidden" id="specialMeal${guestCount}" name="specialMeal${guestCount}" placeholder="Specify dietary needs">
-            </div>
-
-            <div class="col-md-6">
-                <label>Languages Spoken:</label>
-                <div>
-                    <input type="checkbox" id="langEnglish${guestCount}" name="languages${guestCount}" value="EN">
-                    <label for="langEnglish${guestCount}">English</label>
-
-                    <input type="checkbox" id="langBulgarian${guestCount}" name="languages${guestCount}" value="BG">
-                    <label for="langBulgarian${guestCount}">Bulgarian</label>
-
-                    <input type="checkbox" id="langHungarian${guestCount}" name="languages${guestCount}" value="HU">
-                    <label for="langHungarian${guestCount}">Hungarian</label>
-
-                    <input type="checkbox" id="langSwedish${guestCount}" name="languages${guestCount}" value="SW">
-                    <label for="langSwedish${guestCount}">Swedish</label>
-
-                    <input type="checkbox" id="langPolish${guestCount}" name="languages${guestCount}" value="PO">
-                    <label for="langPolish${guestCount}">Polish</label>
-
-                    <input type="checkbox" id="langOther${guestCount}" name="languages${guestCount}" value="Other" onchange="toggleLanguageOther(${i})">
-                    <label for="langOther${guestCount}">Other</label>
+                    <input type="text" class="form-control hidden" id="specialMeal${guestCount}" name="specialMeal${guestCount}" placeholder="Specify dietary needs">
                 </div>
-                <input type="text" class="form-control hidden" id="otherLanguage${guestCount}" name="otherLanguage${guestCount}" placeholder="Specify other languages">
+
+                <div class="col-md-6">
+                    <label>Languages Spoken:</label>
+                    <div>
+                        <input type="checkbox" id="langEnglish${guestCount}" name="languages${guestCount}" value="EN">
+                        <label for="langEnglish${guestCount}">English</label>
+
+                        <input type="checkbox" id="langBulgarian${guestCount}" name="languages${guestCount}" value="BG">
+                        <label for="langBulgarian${guestCount}">Bulgarian</label>
+
+                        <input type="checkbox" id="langHungarian${guestCount}" name="languages${guestCount}" value="HU">
+                        <label for="langHungarian${guestCount}">Hungarian</label>
+
+                        <input type="checkbox" id="langSwedish${guestCount}" name="languages${guestCount}" value="SW">
+                        <label for="langSwedish${guestCount}">Swedish</label>
+
+                        <input type="checkbox" id="langPolish${guestCount}" name="languages${guestCount}" value="PO">
+                        <label for="langPolish${guestCount}">Polish</label>
+
+                        <input type="checkbox" id="langOther${guestCount}" name="languages${guestCount}" value="Other" onchange="toggleLanguageOther(${i})">
+                        <label for="langOther${guestCount}">Other</label>
+                    </div>
+                    <input type="text" class="form-control hidden" id="otherLanguage${guestCount}" name="otherLanguage${guestCount}" placeholder="Specify other languages">
+                </div>
             </div>
-        </div>
-    `;
-    document.getElementById("guest-container").insertAdjacentHTML("beforeend", guestHtml);
+        `;
+        guestContainer.insertAdjacentHTML("beforeend", guestHtml);
+    }
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    updateGuestForms(); // Initialize with one guest visible
+});
 
 function updateGuestTitle(index) {
     let nameField = document.getElementById(`guestName${index}`);

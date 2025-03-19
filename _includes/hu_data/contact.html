@@ -1,63 +1,121 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script>
-    $(function(){
-    $(".ajaxForm").submit(function(e){
-        e.preventDefault();
-        var href = $(this).attr("action");
-        $.ajax({
-            type: "POST",
-            dataType: "json",
-            url: href,
-            data: $(this).serialize(),
-            success: function(response){
-                if(response.status == "success"){
-                    alert('Merci. Votre message a bien été envoyé.');
-                    window.location.href = 'https://alicelepissier.com/wedding-template/fr/#contact';
-                }else{
-                    alert("Une erreur est survenue: " + response.message);
-                }
-            }
-        });
-    });
-    });
-</script>
-<section id="contact">
+<section id="rsvp">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">RSVP</h2>
-                <h3 class="section-subheading text-muted">Ou envoyez nous un email à <a href="mailto:petsgetsmarried@gmail.com">petsgetmarried@gmail.com</a>.</h3>
+                <h3 class="section-subheading text-muted">Please fill out the form to confirm your attendance.</h3>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-12">
-                <!-- Create your own form using FormCarry: https://formcarry.com/ -->
-                <form class="ajaxForm" action="YOUR_FORM_CARRY_ENDPOINT" method="POST">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="control-group form-group">
-                                <input type="text" class="form-control" placeholder="Votre Nom" id="name" name="name" required data-validation-required-message="Renseignez votre prénom et votre nom.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="control-group form-group">
-                                <input type="email" class="form-control" placeholder="Votre Email" id="email" name="email" required data-validation-required-message="Renseignez votre adresse email.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="control-group form-group">
-                                <textarea class="form-control" placeholder="Votre Message" id="message" name="message" required data-validation-required-message="Quel est votre message?"></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="clearfix"></div>
-                        <div class="col-lg-12 text-center">
-                            <div id="success"></div>
-                            <button type="submit" class="btn btn-xl">Envoyer Message</button>
-                        </div>
+                <form class="ajaxForm" action="https://formspree.io/f/xzzeznjk" method="POST">
+                    <div id="guest-container"></div>
+                    <div class="col-lg-12 text-center">
+                        <button type="button" class="btn btn-xl" onclick="addGuest()">Add Guest</button>
+                        <button type="submit" class="btn btn-xl">Submit RSVP</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
 </section>
+
+<script>
+let guestCount = 0;
+function addGuest() {
+    guestCount++;
+    let guestHtml = `
+        <div class="row guest-entry">
+            <div class="col-md-6">
+                <h4 class="service-heading" id="guestTitle${guestCount}">Guest ${guestCount}</h4>
+
+                <label for="guestName${i}">Name:</label>
+                <input type="text" class="form-control" placeholder="Guest Name" id="guestName${guestCount}" name="guestName${guestCount}" required oninput="updateGuestTitle(${guestCount})">
+                
+                <label for="menuChoice${i}">Menu Choice:</label>
+                <select class="form-control" id="mealChoice${guestCount}" name="mealChoice${guestCount}" onchange="toggleSpecialMeal(${guestCount})">
+                    <option value="Menu_1A">Vegetarian</option>
+                    <option value="Menu_1B">Chicken</option>
+                    <option value="Menu_2">Beef</option>
+                    <option value="Menu_3">Fish</option>
+                    <option value="Alternative">Other (Special Request)</option>
+                </select>
+
+                    <select id="menuChoice${i}" name="menuChoice${i}" required onchange="toggleSpecialRequest(${i})">
+                        <option value="Menu_1A">Vegetarian</option>
+                        <option value="Menu_1B">Chicken</option>
+                        <option value="Menu_2">Beef</option>
+                        <option value="Menu_3">Fish</option>
+                        <option value="Alternative">Other (Special Request)</option>
+                    </select>
+
+                <input type="text" class="form-control hidden" id="specialMeal${guestCount}" name="specialMeal${guestCount}" placeholder="Specify dietary needs">
+            </div>
+
+            <div class="col-md-6">
+                <label>Languages Spoken:</label>
+                <div>
+                    <input type="checkbox" id="langEnglish${guestCount}" name="languages${guestCount}" value="EN">
+                    <label for="langEnglish${guestCount}">English</label>
+
+                    <input type="checkbox" id="langBulgarian${guestCount}" name="languages${guestCount}" value="BG">
+                    <label for="langBulgarian${guestCount}">Bulgarian</label>
+
+                    <input type="checkbox" id="langHungarian${guestCount}" name="languages${guestCount}" value="HU">
+                    <label for="langHungarian${guestCount}">Hungarian</label>
+
+                    <input type="checkbox" id="langSwedish${guestCount}" name="languages${guestCount}" value="SW">
+                    <label for="langSwedish${guestCount}">Swedish</label>
+
+                    <input type="checkbox" id="langPolish${guestCount}" name="languages${guestCount}" value="PO">
+                    <label for="langPolish${guestCount}">Polish</label>
+
+                    <input type="checkbox" id="langOther${guestCount}" name="languages${guestCount}" value="Other" onchange="toggleLanguageOther(${i})">
+                    <label for="langOther${guestCount}">Other</label>
+                </div>
+                <input type="text" class="form-control hidden" id="otherLanguage${guestCount}" name="otherLanguage${guestCount}" placeholder="Specify other languages">
+            </div>
+        </div>
+    `;
+    document.getElementById("guest-container").insertAdjacentHTML("beforeend", guestHtml);
+}
+
+function updateGuestTitle(index) {
+    let nameField = document.getElementById(`guestName${index}`);
+    let title = document.getElementById(`guestTitle${index}`);
+    title.textContent = nameField.value ? nameField.value : `Guest ${index}`;
+}
+
+function toggleSpecialMeal(index) {
+    let mealDropdown = document.getElementById(`mealChoice${index}`);
+    let specialMealInput = document.getElementById(`specialMeal${index}`);
+    
+    if (mealDropdown.value === "Alternative") {
+        specialMealInput.classList.remove("hidden");
+        specialMealInput.setAttribute("required", "true");
+    } else {
+        specialMealInput.classList.add("hidden");
+        specialMealInput.removeAttribute("required");
+        specialMealInput.value = "";
+    }
+}
+
+function toggleOtherLanguage(index) {
+    let otherCheckbox = document.getElementById(`langOther${guestIndex}`);
+            let otherInput = document.getElementById(`languageOther${guestIndex}`);
+
+            if (otherCheckbox.checked) {
+                otherInput.classList.remove("hidden");
+                otherInput.setAttribute("required", "true");
+            } else {
+                otherInput.classList.add("hidden");
+                otherInput.removeAttribute("required");
+                otherInput.value = ""; // Clear field if unchecked
+            }
+}
+</script>
+
+<style>
+.hidden { display: none; }
+.guest-entry { margin-bottom: 20px; }
+</style>

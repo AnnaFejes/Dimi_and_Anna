@@ -1,4 +1,4 @@
-<section id="rsvp">
+<section id="contact">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -8,14 +8,15 @@
         </div>
         <div class="row">
             <div class="col-lg-12">
-                <form class="ajaxForm" action="YOUR_FORM_CARRY_ENDPOINT" method="POST">
-                    <div class="form-group text-center">
+                <form class="ajaxForm" action="https://formspree.io/f/xzzeznjk" method="POST">
+                    <div class="col-lg-4 offset-lg-4 col-md-6 offset-md-3 form-group text-center">
                         <label for="guestCountSelect">Number of Guests in your party:</label>
                         <select id="guestCountSelect" class="form-control" onchange="updateGuestForms()">
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
+                            <option value="5">5</option>
                         </select>
                     </div>
                     <div id="guest-container"></div>
@@ -37,13 +38,13 @@ function updateGuestForms() {
     for (let i = 1; i <= guestCount; i++) {
         let guestHtml = `
             <div class="row guest-entry">
+                <h4 class="service-heading" id="guestTitle${i}">Guest ${i}</h4>
                 <div class="col-md-6">
-                    <h4 class="service-heading" id="guestTitle${i}">Guest ${i}</h4>
 
                     <label for="guestName${i}">Name:</label>
                     <input type="text" class="form-control" placeholder="Guest Name" id="guestName${i}" name="guestName${i}" required oninput="updateGuestTitle(${i})">
 
-                    <select id="menuChoice${i}" name="menuChoice${i}" required onchange="toggleSpecialRequest(${i})">
+                    <select id="menuChoice${i}" name="menuChoice${i}" class="form-control" required onchange="toggleSpecialRequest(${i})">
                         <option value="Menu_1A">Vegetarian</option>
                         <option value="Menu_1B">Chicken</option>
                         <option value="Menu_2">Beef</option>
@@ -93,8 +94,8 @@ function updateGuestTitle(index) {
     title.textContent = nameField.value ? nameField.value : `Guest ${index}`;
 }
 
-function toggleSpecialMeal(index) {
-    let mealDropdown = document.getElementById(`mealChoice${index}`);
+function toggleSpecialRequest(index) {
+    let mealDropdown = document.getElementById(`menuChoice${index}`);
     let specialMealInput = document.getElementById(`specialMeal${index}`);
     
     if (mealDropdown.value === "Alternative") {
@@ -109,16 +110,16 @@ function toggleSpecialMeal(index) {
 
 function toggleOtherLanguage(index) {
     let otherCheckbox = document.getElementById(`langOther${guestIndex}`);
-            let otherInput = document.getElementById(`languageOther${guestIndex}`);
+    let otherInput = document.getElementById(`otherLanguage${guestIndex}`);
 
-            if (otherCheckbox.checked) {
-                otherInput.classList.remove("hidden");
-                otherInput.setAttribute("required", "true");
-            } else {
-                otherInput.classList.add("hidden");
-                otherInput.removeAttribute("required");
-                otherInput.value = ""; // Clear field if unchecked
-            }
+    if (otherCheckbox.checked) {
+        otherInput.classList.remove("hidden");
+        otherInput.setAttribute("required", "true");
+    } else {
+        otherInput.classList.add("hidden");
+        otherInput.removeAttribute("required");
+        otherInput.value = ""; // Clear field if unchecked
+    }
 }
 </script>
 

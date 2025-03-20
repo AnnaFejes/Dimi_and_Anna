@@ -812,7 +812,7 @@ section#contact .form-group {
 
 section#contact .form-group input,
 section#contact .form-group textarea {
-    padding: 20px;
+    padding: 10px;
 }
 
 section#contact .form-group input.form-control {
@@ -831,15 +831,15 @@ section#contact .form-control:focus {
 section#contact .form-container {
     background: rgba(255, 255, 255, 0.5); /* White with 50% transparency */
     border-radius: 15px; /* Rounded corners */
-    padding: 20px; /* Add space inside */
+    padding: 10px; /* Add space inside */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
 #guest-container .guest-entry {
     background: rgba(255, 255, 255, 0.5); /* White with 50% transparency */
     border-radius: 15px; /* Rounded corners */
-    padding: 20px; /* Space inside */
-    margin-bottom: 20px; /* Space between guests */
+    padding: 10px; /* Space inside */
+    margin-bottom: 10px; /* Space between guests */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
@@ -847,28 +847,28 @@ section#contact::-webkit-input-placeholder {
     text-transform: uppercase;
     font-family: {{ site.data.template.font.primary }};
     font-weight: 700;
-    color: #bbb;
+    color: #444;
 }
 
 section#contact:-moz-placeholder {
     text-transform: uppercase;
     font-family: {{ site.data.template.font.primary }};
     font-weight: 700;
-    color: #bbb;
+    color: #444;
 }
 
 section#contact::-moz-placeholder {
     text-transform: uppercase;
     font-family: {{ site.data.template.font.primary }};
     font-weight: 700;
-    color: #bbb;
+    color: #444;
 }
 
 section#contact:-ms-input-placeholder {
     text-transform: uppercase;
     font-family: {{ site.data.template.font.primary }};
     font-weight: 700;
-    color: #bbb;
+    color: #444;
 }
 
 section#contact .text-danger {

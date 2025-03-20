@@ -152,15 +152,16 @@ function toggleLanguageOther(index) {
 function toggleAttendance(index) {
     let attendingSelect = document.getElementById(`attending${index}`);
     let languageSection = document.getElementById(`languageSection${index}`);
-    let menuChoiceGroup = document.getElementById(`menuChoice${index}`).closest('.control-group');
+    let menuChoice = document.getElementById(`menuChoice${index}`);
+    let menuChoiceContainer = menuChoice.parentElement; // Direct parent of meal selection
 
-    // Ensure the attendance question stays visible
+    // Ensure only the correct sections are hidden
     if (attendingSelect.value === "No") {
-        languageSection.style.display = "none"; // Hide language section
-        menuChoiceGroup.style.display = "none"; // Hide menu choice
+        languageSection.style.display = "none"; // Hide language selection
+        menuChoiceContainer.style.display = "none"; // Hide meal choice
     } else {
-        languageSection.style.display = "block"; // Show language section
-        menuChoiceGroup.style.display = "block"; // Show menu choice
+        languageSection.style.display = "block"; // Show language selection
+        menuChoiceContainer.style.display = "block"; // Show meal choice
     }
 }
 

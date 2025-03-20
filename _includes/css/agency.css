@@ -814,7 +814,7 @@ section#contact .form-group input,
 section#contact .form-group textarea,
 section#contact .form-group select {
     padding: 10px;
-    color: #444; /* Text color for input, textarea, and select */
+    color: #333 !important; /* Text color for input, textarea, and select */
 }
 
 section#contact .form-group input.form-control {
@@ -849,28 +849,36 @@ section#contact::-webkit-input-placeholder {
     text-transform: uppercase;
     font-family: {{ site.data.template.font.primary }};
     font-weight: 700;
-    color: #444;
+    color: #333 !important;
 }
 
 section#contact:-moz-placeholder {
     text-transform: uppercase;
     font-family: {{ site.data.template.font.primary }};
     font-weight: 700;
-    color: #444;
+    color: #333 !important;
 }
 
 section#contact::-moz-placeholder {
     text-transform: uppercase;
     font-family: {{ site.data.template.font.primary }};
     font-weight: 700;
-    color: #444;
+    color: #333 !important;
 }
 
 section#contact:-ms-input-placeholder {
     text-transform: uppercase;
     font-family: {{ site.data.template.font.primary }};
     font-weight: 700;
-    color: #444;
+    color: #333 !important;
+}
+
+section#contact select {
+    color: #444 !important; /* Text color for select options */
+}
+
+section#contact select option {
+    color: #444 !important; /* Text color for select dropdown options */
 }
 
 section#contact .text-danger {

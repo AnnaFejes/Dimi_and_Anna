@@ -852,6 +852,17 @@ section#contact::-webkit-input-placeholder {
     color: #333 !important;
 }
 
+section#contact input::placeholder,
+section#contact textarea::placeholder {
+    color: #333 !important;
+    opacity: 1; /* Ensure the color is fully visible */
+}
+
+section#contact input[type="checkbox"] ~ label {
+    font-weight: normal !important; /* Remove bold */
+    color: #333 !important; /* Change color to #333 */
+}
+
 section#contact:-moz-placeholder {
     text-transform: uppercase;
     font-family: {{ site.data.template.font.primary }};

@@ -42,7 +42,7 @@ function updateGuestForms() {
         let guestHtml = `
             <div class="row guest-entry">
                 <h4 class="section-heading" id="guestTitle${i}">Guest ${i}</h4>
-                <div class="form-container">
+                <!--<div class="form-container">-->
                     <div class="col-md-6">
                         <div class="control-group form-group">
                             <label for="guestName${i}">Name:</label>
@@ -57,7 +57,7 @@ function updateGuestForms() {
                                 <option value="Menu_3">Fish</option>
                                 <option value="Alternative">Other (Special Request)</option>
                             </select>
-                            
+
                             <input type="text" class="form-control hidden" id="specialMeal${i}" name="specialMeal${i}" placeholder="Specify dietary needs">
                         </div>
                     </div>
@@ -84,10 +84,16 @@ function updateGuestForms() {
                                 <input type="checkbox" id="langOther${i}" name="languages${i}" value="Other" onchange="toggleLanguageOther(${i})">
                                 <label for="langOther${i}">Other</label>
                             </div>
-                            <input type="text" class="form-control hidden" id="otherLanguage${i}" name="otherLanguage${i}" placeholder="Specify other languages">
+
+                            <!-- New row to ensure spacing between checkboxes and input -->
+                            <div class="row hidden" id="otherLanguageRow${i}">
+                                <div class="col-md-12">
+                                    <input type="text" class="form-control hidden mt-2" id="otherLanguage${i}" name="otherLanguage${i}" placeholder="Specify other languages">
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
+                <!--</div>-->
             </div>
         `;
         guestContainer.insertAdjacentHTML("beforeend", guestHtml);
@@ -124,9 +130,11 @@ function toggleLanguageOther(index) {
 
     if (otherCheckbox.checked) {
         otherInput.classList.remove("hidden");
+        otherInput.classList.add("mt-2"); // Add margin-top for spacing
         otherInput.setAttribute("required", "true");
     } else {
         otherInput.classList.add("hidden");
+        otherInput.classList.remove("mt-2"); // Remove spacing when hidden
         otherInput.removeAttribute("required");
         otherInput.value = ""; // Clear field if unchecked
     }

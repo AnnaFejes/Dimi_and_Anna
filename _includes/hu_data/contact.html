@@ -9,16 +9,19 @@
         <div class="row">
             <div class="col-lg-12">
                 <form class="ajaxForm" action="https://formspree.io/f/xzzeznjk" method="POST">
-                    <div class="col-lg-4 offset-lg-4 col-md-6 offset-md-3 form-group text-center">
-                        <label for="guestCountSelect">Number of Guests in your party:</label>
-                        <select id="guestCountSelect" class="form-control" onchange="updateGuestForms()">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                        </select>
+                    <div class="row">
+                        <div class="col-lg-4 offset-lg-4 col-md-6 offset-md-3 form-group text-center">
+                            <label for="guestCountSelect">Number of Guests in your party:</label>
+                            <select id="guestCountSelect" class="form-control" onchange="updateGuestForms()">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
                     </div>
+                    
                     <div id="guest-container"></div>
                     <div class="col-lg-12 text-center">
                         <button type="submit" class="btn btn-xl">Submit RSVP</button>
@@ -38,45 +41,50 @@ function updateGuestForms() {
     for (let i = 1; i <= guestCount; i++) {
         let guestHtml = `
             <div class="row guest-entry">
-                <h4 class="service-heading" id="guestTitle${i}">Guest ${i}</h4>
+                <h4 class="section-heading" id="guestTitle${i}">Guest ${i}</h4>
                 <div class="col-md-6">
+                    <div class="control-group form-group">
+                        <label for="guestName${i}">Name:</label>
+                        <input type="text" class="form-control" placeholder="Guest Name" id="guestName${i}" name="guestName${i}" required oninput="updateGuestTitle(${i})">
+                    </div>
 
-                    <label for="guestName${i}">Name:</label>
-                    <input type="text" class="form-control" placeholder="Guest Name" id="guestName${i}" name="guestName${i}" required oninput="updateGuestTitle(${i})">
+                    <div class="control-group form-group">
+                        <select id="menuChoice${i}" name="menuChoice${i}" class="form-control" required onchange="toggleSpecialRequest(${i})">
+                            <option value="Menu_1A">Vegetarian</option>
+                            <option value="Menu_1B">Chicken</option>
+                            <option value="Menu_2">Beef</option>
+                            <option value="Menu_3">Fish</option>
+                            <option value="Alternative">Other (Special Request)</option>
+                        </select>
 
-                    <select id="menuChoice${i}" name="menuChoice${i}" class="form-control" required onchange="toggleSpecialRequest(${i})">
-                        <option value="Menu_1A">Vegetarian</option>
-                        <option value="Menu_1B">Chicken</option>
-                        <option value="Menu_2">Beef</option>
-                        <option value="Menu_3">Fish</option>
-                        <option value="Alternative">Other (Special Request)</option>
-                    </select>
-
-                    <input type="text" class="form-control hidden" id="specialMeal${i}" name="specialMeal${i}" placeholder="Specify dietary needs">
+                        <input type="text" class="form-control hidden" id="specialMeal${i}" name="specialMeal${i}" placeholder="Specify dietary needs">
+                    </div>
                 </div>
 
                 <div class="col-md-6">
-                    <label>Languages Spoken:</label>
-                    <div class="form-control">
-                        <input type="checkbox" id="langEnglish${i}" name="languages${i}" value="EN">
-                        <label for="langEnglish${i}">English</label>
+                    <div class="control-group form-group">
+                        <label>Languages Spoken:</label>
+                        <div class="form-control">
+                            <input type="checkbox" id="langEnglish${i}" name="languages${i}" value="EN">
+                            <label for="langEnglish${i}">English</label>
 
-                        <input type="checkbox" id="langBulgarian${i}" name="languages${i}" value="BG">
-                        <label for="langBulgarian${i}">Bulgarian</label>
+                            <input type="checkbox" id="langBulgarian${i}" name="languages${i}" value="BG">
+                            <label for="langBulgarian${i}">Bulgarian</label>
 
-                        <input type="checkbox" id="langHungarian${i}" name="languages${i}" value="HU">
-                        <label for="langHungarian${i}">Hungarian</label>
+                            <input type="checkbox" id="langHungarian${i}" name="languages${i}" value="HU">
+                            <label for="langHungarian${i}">Hungarian</label>
 
-                        <input type="checkbox" id="langSwedish${i}" name="languages${i}" value="SW">
-                        <label for="langSwedish${i}">Swedish</label>
+                            <input type="checkbox" id="langSwedish${i}" name="languages${i}" value="SW">
+                            <label for="langSwedish${i}">Swedish</label>
 
-                        <input type="checkbox" id="langPolish${i}" name="languages${i}" value="PO">
-                        <label for="langPolish${i}">Polish</label>
+                            <input type="checkbox" id="langPolish${i}" name="languages${i}" value="PO">
+                            <label for="langPolish${i}">Polish</label>
 
-                        <input type="checkbox" id="langOther${i}" name="languages${i}" value="Other" onchange="toggleLanguageOther(${i})">
-                        <label for="langOther${i}">Other</label>
+                            <input type="checkbox" id="langOther${i}" name="languages${i}" value="Other" onchange="toggleLanguageOther(${i})">
+                            <label for="langOther${i}">Other</label>
+                        </div>
+                        <input type="text" class="form-control hidden" id="otherLanguage${i}" name="otherLanguage${i}" placeholder="Specify other languages">
                     </div>
-                    <input type="text" class="form-control hidden" id="otherLanguage${i}" name="otherLanguage${i}" placeholder="Specify other languages">
                 </div>
             </div>
         `;
@@ -108,7 +116,7 @@ function toggleSpecialRequest(index) {
     }
 }
 
-function toggleOtherLanguage(index) {
+function toggleLanguageOther(index) {
     let otherCheckbox = document.getElementById(`langOther${guestIndex}`);
     let otherInput = document.getElementById(`otherLanguage${guestIndex}`);
 

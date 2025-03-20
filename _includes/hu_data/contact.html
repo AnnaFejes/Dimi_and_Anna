@@ -126,15 +126,18 @@ function toggleSpecialRequest(index) {
 
 function toggleLanguageOther(index) {
     let otherCheckbox = document.getElementById(`langOther${index}`);
+    let otherRow = document.getElementById(`otherLanguageRow${index}`);
     let otherInput = document.getElementById(`otherLanguage${index}`);
 
     if (otherCheckbox.checked) {
+        otherRow.classList.remove("hidden"); // Show the row
         otherInput.classList.remove("hidden");
         otherInput.classList.add("mt-2"); // Add margin-top for spacing
         otherInput.setAttribute("required", "true");
     } else {
+        otherRow.classList.add("hidden"); // Hide the row when unchecked
         otherInput.classList.add("hidden");
-        otherInput.classList.remove("mt-2"); // Remove spacing when hidden
+        otherInput.classList.remove("mt-2");
         otherInput.removeAttribute("required");
         otherInput.value = ""; // Clear field if unchecked
     }

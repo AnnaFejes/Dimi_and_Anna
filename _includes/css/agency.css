@@ -811,8 +811,10 @@ section#contact .form-group {
 }
 
 section#contact .form-group input,
-section#contact .form-group textarea {
+section#contact .form-group textarea,
+section#contact .form-group select {
     padding: 10px;
+    color: #444; /* Text color for input, textarea, and select */
 }
 
 section#contact .form-group input.form-control {

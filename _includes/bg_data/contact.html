@@ -62,7 +62,7 @@ function updateGuestForms() {
                         </div>
                     </div>
 
-                    <div class="col-md-6" id="languageSection${i}">
+                    <div class="col-md-6">
                         <div class="control-group form-group">
                             <label for="attending${i}">Will you be attending?</label>
                             <select id="attending${i}" name="attending${i}" class="form-control" required onchange="toggleAttendance(${i})">
@@ -71,7 +71,7 @@ function updateGuestForms() {
                             </select>
                         </div>
 
-                        <div class="control-group form-group">
+                        <div id="languageSection${i}" class="control-group form-group">
                             <label>Languages Spoken:</label>
                             <div class="form-control">
                                 <input type="checkbox" id="langEnglish${i}" name="languages${i}" value="EN">

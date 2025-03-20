@@ -10,7 +10,7 @@
             <div class="col-lg-12">
                 <form class="ajaxForm" action="https://formspree.io/f/xzzeznjk" method="POST">
                     <div class="row">
-                        <div class="col-lg-4 offset-lg-4 col-md-6 offset-md-3 form-group text-center">
+                        <div class="col-lg-12 text-center form-group"> <!--col-lg-4 offset-lg-4 col-md-6 offset-md-3 -->
                             <label for="guestCountSelect">Number of Guests in your party:</label>
                             <select id="guestCountSelect" class="form-control" onchange="updateGuestForms()">
                                 <option value="1">1</option>
@@ -117,8 +117,8 @@ function toggleSpecialRequest(index) {
 }
 
 function toggleLanguageOther(index) {
-    let otherCheckbox = document.getElementById(`langOther${guestIndex}`);
-    let otherInput = document.getElementById(`otherLanguage${guestIndex}`);
+    let otherCheckbox = document.getElementById(`langOther${index}`);
+    let otherInput = document.getElementById(`otherLanguage${index}`);
 
     if (otherCheckbox.checked) {
         otherInput.classList.remove("hidden");

@@ -828,6 +828,21 @@ section#contact .form-control:focus {
     box-shadow: none;
 }
 
+section#contact .form-container {
+    background: rgba(255, 255, 255, 0.5); /* White with 50% transparency */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px; /* Add space inside */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+#guest-container .guest-entry {
+    background: rgba(255, 255, 255, 0.5); /* White with 50% transparency */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px; /* Space inside */
+    margin-bottom: 20px; /* Space between guests */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
 section#contact::-webkit-input-placeholder {
     text-transform: uppercase;
     font-family: {{ site.data.template.font.primary }};

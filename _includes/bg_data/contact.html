@@ -49,14 +49,6 @@ function updateGuestForms() {
                         </div>
 
                         <div class="control-group form-group">
-                            <label for="attending${i}">Will you be attending?</label>
-                            <select id="attending${i}" name="attending${i}" class="form-control" required onchange="toggleAttendance(${i})">
-                                <option value="Yes">Yes, I can attend</option>
-                                <option value="No">No, I unfortunately cannot attend</option>
-                            </select>
-                        </div>
-
-                        <div class="control-group form-group">
                             <select id="menuChoice${i}" name="menuChoice${i}" class="form-control" required onchange="toggleSpecialRequest(${i})">
                                 <option value="Menu_1A">Vegetarian</option>
                                 <option value="Menu_1B">Chicken</option>
@@ -70,6 +62,14 @@ function updateGuestForms() {
                     </div>
 
                     <div class="col-md-6" id="languageSection${i}">
+                        <div class="control-group form-group">
+                            <label for="attending${i}">Will you be attending?</label>
+                            <select id="attending${i}" name="attending${i}" class="form-control" required onchange="toggleAttendance(${i})">
+                                <option value="Yes">Yes, I can attend</option>
+                                <option value="No">No, I unfortunately cannot attend</option>
+                            </select>
+                        </div>
+
                         <div class="control-group form-group">
                             <label>Languages Spoken:</label>
                             <div class="form-control">

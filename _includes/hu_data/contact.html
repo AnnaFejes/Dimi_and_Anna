@@ -42,58 +42,55 @@ function updateGuestForms() {
         let guestHtml = `
             <div class="row guest-entry">
                 <h4 class="section-heading" id="guestTitle${i}">Guest ${i}</h4>
-                <!--<div class="form-container">-->
-                    <div class="col-md-6">
-                        <div class="control-group form-group">
-                            <label for="guestName${i}">Name:</label>
-                            <input type="text" class="form-control" placeholder="Guest Name" id="guestName${i}" name="guestName${i}" required oninput="updateGuestTitle(${i})">
-                        </div>
-
-                        <div class="control-group form-group">
-                            <select id="menuChoice${i}" name="menuChoice${i}" class="form-control" required onchange="toggleSpecialRequest(${i})">
-                                <option value="Menu_1A">Vegetarian</option>
-                                <option value="Menu_1B">Chicken</option>
-                                <option value="Menu_2">Beef</option>
-                                <option value="Menu_3">Fish</option>
-                                <option value="Alternative">Other (Special Request)</option>
-                            </select>
-
-                            <input type="text" class="form-control hidden" id="specialMeal${i}" name="specialMeal${i}" placeholder="Specify dietary needs">
-                        </div>
+                <div class="col-md-6">
+                    <div class="control-group form-group">
+                        <label for="guestName${i}">Name:</label>
+                        <input type="text" class="form-control" placeholder="Guest Name" id="guestName${i}" name="guestName${i}" required oninput="updateGuestTitle(${i})">
                     </div>
 
-                    <div class="col-md-6">
-                        <div class="control-group form-group">
-                            <label>Languages Spoken:</label>
-                            <div class="form-control">
-                                <input type="checkbox" id="langEnglish${i}" name="languages${i}" value="EN">
-                                <label for="langEnglish${i}">English</label>
+                    <div class="control-group form-group">
+                        <select id="menuChoice${i}" name="menuChoice${i}" class="form-control" required onchange="toggleSpecialRequest(${i})">
+                            <option value="Menu_1A">Vegetarian</option>
+                            <option value="Menu_1B">Chicken</option>
+                            <option value="Menu_2">Beef</option>
+                            <option value="Menu_3">Fish</option>
+                            <option value="Alternative">Other (Special Request)</option>
+                        </select>
 
-                                <input type="checkbox" id="langBulgarian${i}" name="languages${i}" value="BG">
-                                <label for="langBulgarian${i}">Bulgarian</label>
+                        <input type="text" class="form-control hidden" id="specialMeal${i}" name="specialMeal${i}" placeholder="Specify dietary needs">
+                    </div>
+                </div>
 
-                                <input type="checkbox" id="langHungarian${i}" name="languages${i}" value="HU">
-                                <label for="langHungarian${i}">Hungarian</label>
+                <div class="col-md-6">
+                    <div class="control-group form-group">
+                        <label>Languages Spoken:</label>
+                        <div class="form-control">
+                            <input type="checkbox" id="langEnglish${i}" name="languages${i}" value="EN">
+                            <label for="langEnglish${i}">English</label>
 
-                                <input type="checkbox" id="langSwedish${i}" name="languages${i}" value="SW">
-                                <label for="langSwedish${i}">Swedish</label>
+                            <input type="checkbox" id="langBulgarian${i}" name="languages${i}" value="BG">
+                            <label for="langBulgarian${i}">Bulgarian</label>
 
-                                <input type="checkbox" id="langPolish${i}" name="languages${i}" value="PO">
-                                <label for="langPolish${i}">Polish</label>
+                            <input type="checkbox" id="langHungarian${i}" name="languages${i}" value="HU">
+                            <label for="langHungarian${i}">Hungarian</label>
 
-                                <input type="checkbox" id="langOther${i}" name="languages${i}" value="Other" onchange="toggleLanguageOther(${i})">
-                                <label for="langOther${i}">Other</label>
-                            </div>
+                            <input type="checkbox" id="langSwedish${i}" name="languages${i}" value="SW">
+                            <label for="langSwedish${i}">Swedish</label>
 
-                            <!-- New row to ensure spacing between checkboxes and input -->
-                            <div class="row hidden" id="otherLanguageRow${i}">
-                                <div class="col-md-12">
-                                    <input type="text" class="form-control hidden mt-2" id="otherLanguage${i}" name="otherLanguage${i}" placeholder="Specify other languages">
-                                </div>
+                            <input type="checkbox" id="langPolish${i}" name="languages${i}" value="PO">
+                            <label for="langPolish${i}">Polish</label>
+
+                            <input type="checkbox" id="langOther${i}" name="languages${i}" value="Other" onchange="toggleLanguageOther(${i})">
+                            <label for="langOther${i}">Other</label>
+                        </div>
+
+                        <div class="row hidden" id="otherLanguageRow${i}">
+                            <div class="col-md-12">
+                                <input type="text" class="form-control hidden mt-2" id="otherLanguage${i}" name="otherLanguage${i}" placeholder="Specify other languages">
                             </div>
                         </div>
                     </div>
-                <!--</div>-->
+                </div>
             </div>
         `;
         guestContainer.insertAdjacentHTML("beforeend", guestHtml);

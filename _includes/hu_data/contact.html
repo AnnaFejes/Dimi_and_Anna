@@ -3,15 +3,15 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">RSVP</h2>
-                <h3 class="section-subheading">Please fill out the form to confirm your attendance.</h3> <!--text-muted-->
+                <h3 class="section-subheading">Kérlek, töltsétek ki az űrlapot a részvétel megerősítéséhez.</h3>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-12">
                 <form class="ajaxForm" action="https://formspree.io/f/xzzeznjk" method="POST">
                     <div class="row">
-                        <div class="col-lg-12 text-center form-group"> <!--col-lg-4 offset-lg-4 col-md-6 offset-md-3 -->
-                            <label for="guestCountSelect">Number of Guests in your party:</label>
+                        <div class="col-lg-12 text-center form-group">
+                            <label for="guestCountSelect">Hányan vagytok a társaságban?</label>
                             <select id="guestCountSelect" class="form-control" onchange="updateGuestForms()">
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -24,7 +24,7 @@
                     
                     <div id="guest-container"></div>
                     <div class="col-lg-12 text-center">
-                        <button type="submit" class="btn btn-xl">Submit RSVP</button>
+                        <button type="submit" class="btn btn-xl">RSVP elküldése</button>
                     </div>
                 </form>
             </div>
@@ -42,55 +42,64 @@ function updateGuestForms() {
         let guestHtml = `
             <div class="row guest-entry">
                 <h4 class="section-heading" id="guestTitle${i}">Guest ${i}</h4>
-                <div class="col-md-6">
-                    <div class="control-group form-group">
-                        <label for="guestName${i}">Name:</label>
-                        <input type="text" class="form-control" placeholder="Guest Name" id="guestName${i}" name="guestName${i}" required oninput="updateGuestTitle(${i})">
-                    </div>
-
-                    <div class="control-group form-group">
-                        <select id="menuChoice${i}" name="menuChoice${i}" class="form-control" required onchange="toggleSpecialRequest(${i})">
-                            <option value="Menu_1A">Vegetarian</option>
-                            <option value="Menu_1B">Chicken</option>
-                            <option value="Menu_2">Beef</option>
-                            <option value="Menu_3">Fish</option>
-                            <option value="Alternative">Other (Special Request)</option>
-                        </select>
-
-                        <input type="text" class="form-control hidden" id="specialMeal${i}" name="specialMeal${i}" placeholder="Specify dietary needs">
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="control-group form-group">
-                        <label>Languages Spoken:</label>
-                        <div class="form-control">
-                            <input type="checkbox" id="langEnglish${i}" name="languages${i}" value="EN">
-                            <label for="langEnglish${i}">English</label>
-
-                            <input type="checkbox" id="langBulgarian${i}" name="languages${i}" value="BG">
-                            <label for="langBulgarian${i}">Bulgarian</label>
-
-                            <input type="checkbox" id="langHungarian${i}" name="languages${i}" value="HU">
-                            <label for="langHungarian${i}">Hungarian</label>
-
-                            <input type="checkbox" id="langSwedish${i}" name="languages${i}" value="SW">
-                            <label for="langSwedish${i}">Swedish</label>
-
-                            <input type="checkbox" id="langPolish${i}" name="languages${i}" value="PO">
-                            <label for="langPolish${i}">Polish</label>
-
-                            <input type="checkbox" id="langOther${i}" name="languages${i}" value="Other" onchange="toggleLanguageOther(${i})">
-                            <label for="langOther${i}">Other</label>
+                    <div class="col-md-6">
+                        <div class="control-group form-group">
+                            <label for="guestName${i}">Név:</label>
+                            <input type="text" class="form-control" placeholder="Add meg a neved" id="guestName${i}" name="guestName${i}" required oninput="updateGuestTitle(${i})">
                         </div>
 
-                        <div class="row hidden" id="otherLanguageRow${i}">
-                            <div class="col-md-12">
-                                <input type="text" class="form-control hidden mt-2" id="otherLanguage${i}" name="otherLanguage${i}" placeholder="Specify other languages">
+                        <div class="control-group form-group">
+                            <label>Menüválaszték:</label>
+                            <select id="menuChoice${i}" name="menuChoice${i}" class="form-control" required onchange="toggleSpecialRequest(${i})">
+                                <option value="Menu_1A">Vegetarian</option>
+                                <option value="Menu_1B">Chicken</option>
+                                <option value="Menu_2">Beef</option>
+                                <option value="Menu_3">Fish</option>
+                                <option value="Alternative">Más (Speciális étrend)</option>
+                            </select>
+
+                            <input type="text" class="form-control hidden" id="specialMeal${i}" name="specialMeal${i}" placeholder="Add meg, milyen más, speciális étrendre van szükséged">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="control-group form-group">
+                            <label for="attending${i}">Részt veszel?</label>
+                            <select id="attending${i}" name="attending${i}" class="form-control" required onchange="toggleAttendance(${i})">
+                                <option value="Yes">Igen, részt veszek</option>
+                                <option value="No">Nem, sajnos nem tudok részt venni</option>
+                            </select>
+                        </div>
+
+                        <div id="languageSection${i}" class="control-group form-group">
+                            <label>Beszélt nyelvek:</label>
+                            <div class="form-control">
+                                <input type="checkbox" id="langEnglish${i}" name="languages${i}" value="EN">
+                                <label for="langEnglish${i}">Angol</label>
+
+                                <input type="checkbox" id="langBulgarian${i}" name="languages${i}" value="BG">
+                                <label for="langBulgarian${i}">Bolgár</label>
+
+                                <input type="checkbox" id="langHungarian${i}" name="languages${i}" value="HU">
+                                <label for="langHungarian${i}">Magyar</label>
+
+                                <input type="checkbox" id="langSwedish${i}" name="languages${i}" value="SW">
+                                <label for="langSwedish${i}">Svéd</label>
+
+                                <input type="checkbox" id="langPolish${i}" name="languages${i}" value="PO">
+                                <label for="langPolish${i}">Lengyel</label>
+
+                                <input type="checkbox" id="langOther${i}" name="languages${i}" value="Other" onchange="toggleLanguageOther(${i})">
+                                <label for="langOther${i}">Más nyelv</label>
+                            </div>
+
+                            <div class="row hidden" id="otherLanguageRow${i}">
+                                <div class="col-md-12">
+                                    <input type="text" class="form-control hidden mt-2" id="otherLanguage${i}" name="otherLanguage${i}" placeholder="Add meg, milyen más nyelve(ke)t beszélsz">
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
             </div>
         `;
         guestContainer.insertAdjacentHTML("beforeend", guestHtml);
@@ -104,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function() {
 function updateGuestTitle(index) {
     let nameField = document.getElementById(`guestName${index}`);
     let title = document.getElementById(`guestTitle${index}`);
-    title.textContent = nameField.value ? nameField.value : `Guest ${index}`;
+    title.textContent = nameField.value ? nameField.value : `Vendég ${index}`;
 }
 
 function toggleSpecialRequest(index) {
@@ -127,18 +136,35 @@ function toggleLanguageOther(index) {
     let otherInput = document.getElementById(`otherLanguage${index}`);
 
     if (otherCheckbox.checked) {
-        otherRow.classList.remove("hidden"); // Show the row
+        otherRow.classList.remove("hidden");
         otherInput.classList.remove("hidden");
-        otherInput.classList.add("mt-2"); // Add margin-top for spacing
+        otherInput.classList.add("mt-2");
         otherInput.setAttribute("required", "true");
     } else {
-        otherRow.classList.add("hidden"); // Hide the row when unchecked
+        otherRow.classList.add("hidden");
         otherInput.classList.add("hidden");
         otherInput.classList.remove("mt-2");
         otherInput.removeAttribute("required");
-        otherInput.value = ""; // Clear field if unchecked
+        otherInput.value = "";
     }
 }
+
+function toggleAttendance(index) {
+    let attendingSelect = document.getElementById(`attending${index}`);
+    let languageSection = document.getElementById(`languageSection${index}`);
+    let menuChoice = document.getElementById(`menuChoice${index}`);
+    let menuChoiceContainer = menuChoice.parentElement; // Direct parent of meal selection
+
+    // Ensure only the correct sections are hidden
+    if (attendingSelect.value === "No") {
+        languageSection.style.display = "none"; // Hide language selection
+        menuChoiceContainer.style.display = "none"; // Hide meal choice
+    } else {
+        languageSection.style.display = "block"; // Show language selection
+        menuChoiceContainer.style.display = "block"; // Show meal choice
+    }
+}
+
 </script>
 
 <style>

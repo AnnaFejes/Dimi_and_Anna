@@ -1,0 +1,15 @@
+- name: Vegetáriánus
+  starter: Vegyes zöldsaláta sajttal, gránátalma szósszal, szárított paradicsommal és magvakkal
+  main: Cukkini tekercs Philadelphia lágy sajttal és Aioli szósszal
+
+- name: Pulyka
+  starter: Vegyes zöldsaláta sajttal, gránátalma szósszal, szárított paradicsommal és magvakkal
+  main: Szaftos pulykafilé, hollandi szósszal és fekete rizzsel körítve
+
+- name: Beef
+  starter: "Caprese" saláta rukkolával
+  main: Kladnitsa gombás fasírt parmezánnal és tejmártással
+
+- name: Pork
+  starter: "Caprese" saláta rukkolával
+  main: Sertés bon filé paprika szósszal és körettel

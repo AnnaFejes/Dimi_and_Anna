@@ -6,10 +6,10 @@
   starter: Vegyes zöldsaláta sajttal, gránátalma szósszal, szárított paradicsommal és magvakkal
   main: Szaftos pulykafilé, hollandi szósszal és fekete rizzsel körítve
 
-- name: Beef
-  starter: "Caprese" saláta rukkolával
+- name: Marha
+  starter: '"Caprese" saláta rukkolával'
   main: Kladnitsa gombás fasírt parmezánnal és tejmártással
 
-- name: Pork
-  starter: "Caprese" saláta rukkolával
+- name: Sertés
+  starter: '"Caprese" saláta rukkolával'
   main: Sertés bon filé paprika szósszal és körettel

@@ -143,6 +143,7 @@ fieldset[disabled] .btn-primary.active {
     font-weight: 700;
     color: #fff;
     background-color: #{{ site.data.template.color.primary }};
+    white-space: normal;
 }
 
 .btn-xl:hover,
@@ -792,6 +793,24 @@ section h3.section-subheading {
 
 aside.clients img {
     margin: 50px auto;
+}
+
+/*Menu items*/
+section#menu .custom-icon-list {
+    list-style: none; /* Removes default bullet points */
+    padding-left: 0; /* Aligns list with page */
+}
+
+section#menu .custom-icon-list li {
+    display: flex; /* Aligns icon and text horizontally */
+    align-items: center; /* Centers icon vertically */
+    margin-bottom: 10px; /* Adds spacing between list items */
+}
+
+section#menu .list-icon {
+    width: 48px; /* Adjust based on your image */
+    height: 48px;
+    margin-right: 10px; /* Space between icon and text */
 }
 
 section#contact {

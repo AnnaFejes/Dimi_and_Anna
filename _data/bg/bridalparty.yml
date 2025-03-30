@@ -1,31 +1,31 @@
 - name: Барби Шомоги
   pic: 1
-  position: Шаферка (Maid of Honour)
+  position: Кума
 
-- name: Нора Фюльоп
+- name: Фюли (Нора)
   pic: 2
   position: Шаферка
 
-- name: Име
+- name: Дети
   pic: 3
   position: Роля
 
-- name: Име
+- name: Бриги
   pic: 4
   position: Роля
 
-- name: Име
+- name: Васил
   pic: 5
-  position: Роля
+  position: Кум
 
-- name: Име
+- name: Никола
   pic: 6
-  position: Роля
+  position: Шафер
 
-- name: Име
+- name: Даниел
   pic: 7
-  position: Роля
+  position: Шафер
 
-- name: Име
+- name: Раян
   pic: 8
-  position: Роля
+  position: Шафер

@@ -1,31 +1,31 @@
-- name: Somogyi Barbi
+- name: Barbi
   pic: 1
   position: Díszlány
 
-- name: Fülöpp Nóra
+- name: Füli
   pic: 2
   position: Koszorúslány
 
-- name: Név
+- name: Detti
   pic: 3
   position: Koszorúslány
 
-- name: Név
+- name: Brigi
   pic: 4
   position: Koszorúslány
 
-- name: Név
+- name: Vaszil
   pic: 5
   position: Násznagy
 
-- name: Név
+- name: Nikola
   pic: 6
   position: Vőfély
 
-- name: Név
+- name: Daniel
   pic: 7
   position: Vőfély
 
-- name: Név
+- name: Ryan
   pic: 8
   position: Vőfély

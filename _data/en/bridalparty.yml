@@ -1,31 +1,31 @@
-- name: Barbi Somogyi
+- name: Barbi
   pic: 1
   position: Maid of Honour
 
-- name: Nóra Fülöpp
+- name: Füli (Nóra) 
   pic: 2
   position: Bridesmaid
 
-- name: Name
+- name: Detti
   pic: 3
   position: Bridesmaid
 
-- name: Name
+- name: Brigi
   pic: 4
   position: Bridesmaid
 
-- name: Name
+- name: Vasil
   pic: 5
   position: Best Man
 
-- name: Name
+- name: Nikola
   pic: 6
   position: Groomsman
 
-- name: Name
+- name: Daniel
   pic: 7
   position: Groomsman
 
-- name: Name
+- name: Ryan
   pic: 8
   position: Groomsman

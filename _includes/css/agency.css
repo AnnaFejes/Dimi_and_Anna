@@ -331,7 +331,7 @@ fieldset[disabled] .btn-m.active {
     .navbar-default {
         padding: 25px 0;
         border: 0;
-        background-color: transparent;
+        /*background-color: transparent;*/
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -361,9 +361,9 @@ fieldset[disabled] .btn-m.active {
 
 header {
     text-align: center;
-    color: #fff;
+    color: #{{ site.data.template.color.secondary }};
     background-attachment: scroll;
-    background-image: url('{{ site.baseurl }}/img/backgrounds/header.jpeg'); 
+    background-image: url('{{ site.baseurl }}/img/backgrounds/header.gif'); 
     background-position: center center;
     /*background-position: top center;*/
     background-repeat: none;
@@ -416,9 +416,9 @@ header .intro-text .intro-heading-bg {
 @media(min-width:768px) {
 	header {
     text-align: center;
-    color: #fff;
+    color: #{{ site.data.template.color.secondary }};
     background-attachment: scroll;
-    background-image: url('{{ site.baseurl }}/img/backgrounds/header.jpeg'); 
+    background-image: url('{{ site.baseurl }}/img/backgrounds/header.gif'); 
     /*background-position: center center;*/
     background-position: top center;
     background-repeat: none;

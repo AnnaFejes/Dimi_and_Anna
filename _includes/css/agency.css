@@ -418,7 +418,7 @@ header .intro-text .intro-heading-bg {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url('{{ site.baseurl }}/img/backgrounds/header.gif'); 
+    background-image: url('{{ site.baseurl }}/img/backgrounds/header.jpeg'); 
     /*background-position: center center;*/
     background-position: top center;
     background-repeat: none;

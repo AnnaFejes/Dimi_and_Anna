@@ -361,6 +361,7 @@ fieldset[disabled] .btn-m.active {
 
 header {
     text-align: center;
+    margin-top: 80px;
     color: #{{ site.data.template.color.secondary }};
     background-attachment: scroll;
     background-image: url('{{ site.baseurl }}/img/backgrounds/header.gif'); 
@@ -416,6 +417,7 @@ header .intro-text .intro-heading-bg {
 @media(min-width:768px) {
 	header {
     text-align: center;
+    margin-top: 80px;
     color: #{{ site.data.template.color.secondary }};
     background-attachment: scroll;
     background-image: url('{{ site.baseurl }}/img/backgrounds/header.gif'); 

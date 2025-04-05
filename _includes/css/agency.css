@@ -382,7 +382,7 @@ header .intro-text {
 .sub-intro {
     color: #{{ site.data.template.color.secondary }};
     text-align: center;
-    font-size: 35px;
+    font-size: 30px;
     font-family: 'Lato';
 }
 
@@ -422,13 +422,13 @@ header .intro-text .intro-heading-bg {
 }
 
 /*for the Hungarian heading to display in two lines*/
-.heading-mobile {
+header .heading-mobile {
     display: inline;
-  }
+}
   
-  .heading-desktop {
+header .heading-desktop {
     display: none;
-  }
+}
 
 @media(min-width:768px) {
 	header {

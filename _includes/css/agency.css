@@ -382,7 +382,7 @@ header .intro-text {
 .sub-intro {
     color: #{{ site.data.template.color.secondary }};
     text-align: center;
-    text-shadow: 2px 2px 4px #000000;
+    font-size: 35px;
     font-family: 'Lato';
 }
 
@@ -423,11 +423,11 @@ header .intro-text .intro-heading-bg {
 
 /*for the Hungarian heading to display in two lines*/
 .heading-mobile {
-    display: none;
+    display: inline;
   }
   
   .heading-desktop {
-    display: inline;
+    display: none;
   }
 
 @media(min-width:768px) {
@@ -448,12 +448,12 @@ header .intro-text .intro-heading-bg {
 	}
 
     /*for the Hungarian heading to display in one line*/
-    .heading-desktop {
-    display: none;
+    header .heading-desktop {
+    display: inline;
     }
     
-    .heading-mobile {
-    display: inline;
+    header .heading-mobile {
+    display: none;
     }
 
     header .intro-text {
@@ -473,11 +473,6 @@ header .intro-text .intro-heading-bg {
         /*font-style: italic;*/
         line-height: 40px;
     }
-
-    /*.sub-intro {
-        color: #{{ site.data.template.color.secondary }};
-        text-align: center;
-    }*/
 
     header .intro-text .intro-heading {
         margin-bottom: 100px;

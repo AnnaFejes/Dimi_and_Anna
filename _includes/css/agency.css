@@ -454,10 +454,10 @@ header .intro-text .intro-heading-bg {
         line-height: 40px;
     }
 
-    .sub-intro {
+    /*.sub-intro {
         color: #{{ site.data.template.color.secondary }};
         text-align: center;
-    }
+    }*/
 
     header .intro-text .intro-heading {
         margin-bottom: 100px;

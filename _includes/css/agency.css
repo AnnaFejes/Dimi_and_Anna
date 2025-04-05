@@ -424,10 +424,10 @@ header .intro-text .intro-heading-bg {
     /*background-position: center center;*/
     background-position: top center;
     background-repeat: none;
-    -webkit-background-size: cover;
+    /*-webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
-    -o-background-size: cover;
+    -o-background-size: cover;*/
     /*opacity: 0.5;*/
 	}
 

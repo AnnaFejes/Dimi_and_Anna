@@ -419,7 +419,7 @@ header .intro-text .intro-heading {
 }
 
 header .intro-text .intro-heading-bg {
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     /*text-transform: uppercase;*/
     /*font-family: {{ site.data.template.font.primary }};*/
     font-family: 'Great Vibes', cursive;

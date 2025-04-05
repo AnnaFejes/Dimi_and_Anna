@@ -370,8 +370,8 @@ header {
 }
 
 header .intro-text {
-    padding-top: 60px;
-    padding-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 10px;
 }
 
 header .intro-text .intro-lead-in {
@@ -454,7 +454,7 @@ header .heading-desktop {
 .sub-intro {
     color: #{{ site.data.template.color.primary }};
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;
     font-family: 'Great Vibes', cursive;
 }
 

@@ -382,6 +382,8 @@ header .intro-text {
 .sub-intro {
     color: #{{ site.data.template.color.secondary }};
     text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: 'Lato';
 }
 
 header .intro-text .intro-lead-in {
@@ -419,6 +421,15 @@ header .intro-text .intro-heading-bg {
     padding-bottom: 15px;
 }
 
+/*for the Hungarian heading to display in two lines*/
+.heading-mobile {
+    display: none;
+  }
+  
+  .heading-desktop {
+    display: inline;
+  }
+
 @media(min-width:768px) {
 	header {
     text-align: center;
@@ -435,6 +446,15 @@ header .intro-text .intro-heading-bg {
     -o-background-size: cover;*/
     /*opacity: 0.5;*/
 	}
+
+    /*for the Hungarian heading to display in one line*/
+    .heading-desktop {
+    display: none;
+    }
+    
+    .heading-mobile {
+    display: inline;
+    }
 
     header .intro-text {
         /*padding-top: 300px;*/

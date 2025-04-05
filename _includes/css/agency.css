@@ -4,11 +4,12 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+ /*Main setup*/
 body {
     overflow-x: hidden;
-    /*font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;*/
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #{{ site.data.template.color.secondary-dark }};
+    webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
 }
 
 .text-muted {
@@ -22,15 +23,6 @@ body {
 p {
     font-size: 14px;
     line-height: 1.75;
-}
-
-.plist {
-    font-size: 14px;
-    white-space: pre-wrap; /* CSS3 */    
-    white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
-    white-space: -pre-wrap; /* Opera 4-6 */    
-    white-space: -o-pre-wrap; /* Opera 7 */    
-    word-wrap: break-word; /* Internet Explorer 5.5+ */
 }
 
 p.large {
@@ -83,6 +75,8 @@ h6 {
 .bg-darkest-gray {
     background-color: #222;
 }
+
+/*buttons*/
 
 .btn-primary {
     border-color: #{{ site.data.template.color.primary }};
@@ -237,6 +231,9 @@ fieldset[disabled] .btn-m.active {
     color: #{{ site.data.template.color.primary }};
     background-color: #fff;
 }
+
+/*Navbar*/
+
 .navbar-default {
     border-color: transparent;
     background-color: #222;
@@ -245,7 +242,6 @@ fieldset[disabled] .btn-m.active {
 }
 
 .navbar-default .navbar-brand {
-    /*font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;*/
     font-family: "stay_classy_sldtregular","Helvetica Neue",Helvetica,Arial,cursive;
     color: #{{ site.data.template.color.primary }};
 }
@@ -281,7 +277,6 @@ fieldset[disabled] .btn-m.active {
     font-weight: 400;
     letter-spacing: 1px;
     color: #fff;
-    /*color: #808080;*/
     -webkit-transition: all ease .35s;
     -moz-transition: all ease .35s;
     transition: all ease .35s;
@@ -306,7 +301,6 @@ fieldset[disabled] .btn-m.active {
 }
 
 .brand {
-    /*font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;*/
     font-family: "stay_classy_sldtregular","Helvetica Neue",Helvetica,Arial,cursive;
     color: #{{ site.data.template.color.primary }};
     font-size: 2.5em;
@@ -359,6 +353,8 @@ fieldset[disabled] .btn-m.active {
 
 }
 
+/*Header*/
+
 header {
     text-align: center;
     margin-top: 80px;
@@ -366,7 +362,6 @@ header {
     background-attachment: scroll;
     background-image: url('{{ site.baseurl }}/img/backgrounds/header.gif'); 
     background-position: center center;
-    /*background-position: top center;*/
     background-repeat: none;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -375,57 +370,23 @@ header {
 }
 
 header .intro-text {
-    padding-top: 100px;
+    padding-top: 60px;
     padding-bottom: 50px;
-}
-
-.sub-intro {
-    color: #{{ site.data.template.color.primary }};
-    text-align: center;
-    font-size: 20px;
-    font-family: 'Great Vibes', cursive;
-}
-
-@media(min-width:768px) {
-    .sub-intro {
-        color: #{{ site.data.template.color.primary }};
-        text-align: center;
-        font-size: 35px;
-        font-family: 'Great Vibes', cursive;
-    }
 }
 
 header .intro-text .intro-lead-in {
     margin-bottom: 25px;
-    /*font-family: {{ site.data.template.font.secondary }};*/
-    /*font-family: {{ site.data.template.font.primary }};*/
     font-family: 'Great Vibes', cursive;
     font-weight: 300;
     font-size: 22px;
-    /*font-style: italic;*/
     line-height: 22px;
 }
 
-header .intro-text .intro-heading {
-    margin-bottom: 25px;
-    /*text-transform: uppercase;*/
-    /*font-family: {{ site.data.template.font.primary }};*/
-    font-family: 'stay_classy_sldtregular';
-    text-shadow: 2px 2px 4px #000000;
-    font-size: 75px;
-    /*font-weight: 700;*/
-    line-height: 75px;
-    padding-bottom: 15px;
-}
-
 header .intro-text .intro-heading-bg {
-    margin-bottom: 10px;
-    /*text-transform: uppercase;*/
-    /*font-family: {{ site.data.template.font.primary }};*/
+    margin-bottom: 25px;
     font-family: 'Great Vibes', cursive;
     text-shadow: 2px 2px 4px #000000;
     font-size: 75px;
-    /*font-weight: 700;*/
     line-height: 75px;
     padding-bottom: 15px;
 }
@@ -446,14 +407,8 @@ header .heading-desktop {
     color: #{{ site.data.template.color.secondary }};
     background-attachment: scroll;
     background-image: url('{{ site.baseurl }}/img/backgrounds/header.gif'); 
-    /*background-position: center center;*/
     background-position: top center;
     background-repeat: none;
-    /*-webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;*/
-    /*opacity: 0.5;*/
 	}
 
     /*for the Hungarian heading to display in one line*/
@@ -473,34 +428,46 @@ header .heading-desktop {
     }
 
     header .intro-text {
-        /*padding-top: 300px;*/
         padding-top: 280px;
-        /*padding-bottom: 200px;*/
         padding-bottom: 100px;
     }
 
-    .intro-text .intro-lead-in {
+    header .intro-text .intro-lead-in {
         margin-bottom: 25px;
-        /*font-family: {{ site.data.template.font.secondary }};*/
-        /*font-family: {{ site.data.template.font.primary }};*/
-        font-family: 'Great Vibes', cursive;;
+        font-family: 'Great Vibes', cursive;
         font-weight: 300;
         font-size: 40px;
-        /*font-style: italic;*/
         line-height: 40px;
     }
 
-    header .intro-text .intro-heading {
-        margin-bottom: 100px;
-        /*text-transform: uppercase;*/
-        /*font-family: {{ site.data.template.font.primary }};*/
-        font-family: 'stay_classy_sldtregular';
+    header .intro-text .intro-heading-bg {
+        margin-bottom: 25px; /*original margin was 100px before bg*/
+        font-family: 'Great Vibes', cursive;
         text-shadow: 2px 2px 4px #000000;
         font-size: 75px;
-        /*font-weight: 700;*/
         line-height: 75px;
     }
 }
+
+/*Sub-intro section on the Header page*/
+
+.sub-intro {
+    color: #{{ site.data.template.color.primary }};
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Great Vibes', cursive;
+}
+
+@media(min-width:768px) {
+    .sub-intro {
+        color: #{{ site.data.template.color.primary }};
+        text-align: center;
+        font-size: 35px;
+        font-family: 'Great Vibes', cursive;
+    }
+}
+
+/*For all sections*/
 
 section {
     padding: 100px 0;
@@ -531,6 +498,8 @@ section h3.section-subheading {
     margin: 15px 0;
     text-transform: none;
 }
+
+/*Things to do*/
 
 #portfolio .portfolio-item {
     right: 0;
@@ -609,6 +578,8 @@ section h3.section-subheading {
         margin: 0 0 30px;
     }
 }
+
+/*Events page*/
 
 .timeline {
     position: relative;
@@ -810,6 +781,8 @@ section h3.section-subheading {
     }
 }
 
+/*Bridal party*/
+
 .team-member {
     margin-bottom: 50px;
     text-align: center;
@@ -839,6 +812,16 @@ aside.clients img {
 }
 
 /*Menu items*/
+
+.plist {
+    font-size: 14px;
+    white-space: pre-wrap; /* CSS3 */    
+    white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+    white-space: -pre-wrap; /* Opera 4-6 */    
+    white-space: -o-pre-wrap; /* Opera 7 */    
+    word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+
 section#menu .custom-icon-list {
     list-style: none; /* Removes default bullet points */
     padding-left: 0; /* Aligns list with page */
@@ -855,6 +838,8 @@ section#menu .list-icon {
     height: 48px;
     margin-right: 10px; /* Space between icon and text */
 }
+
+/*Contact*/
 
 section#contact {
     background-color: #222;
@@ -958,6 +943,8 @@ section#contact .text-danger {
     color: #e74c3c;
 }
 
+/*footer*/
+
 footer {
     padding: 25px 0;
     text-align: center;
@@ -1009,6 +996,8 @@ ul.social-buttons li a:active {
 .btn:active:focus {
     outline: 0;
 }
+
+/*Modals*/
 
 .portfolio-modal .modal-content {
     padding: 100px 0;
@@ -1097,8 +1086,4 @@ img::selection {
 
 img::-moz-selection {
     background: 0 0;
-}
-
-body {
-    webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
 }

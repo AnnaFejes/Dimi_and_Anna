@@ -382,8 +382,17 @@ header .intro-text {
 .sub-intro {
     color: #{{ site.data.template.color.primary }};
     text-align: center;
-    font-size: 35px;
+    font-size: 20px;
     font-family: 'Great Vibes', cursive;
+}
+
+@media(min-width:768px) {
+    .sub-intro {
+        color: #{{ site.data.template.color.primary }};
+        text-align: center;
+        font-size: 35px;
+        font-family: 'Great Vibes', cursive;
+    }
 }
 
 header .intro-text .intro-lead-in {

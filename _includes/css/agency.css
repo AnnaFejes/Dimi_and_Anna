@@ -469,6 +469,7 @@ header .heading-desktop {
     header .intro-detail {
         font-family: 'Great Vibes', cursive;
         text-shadow: 2px 2px 4px #000000;
+        font-weight: 500;
         font-size: 45px;
     }
 

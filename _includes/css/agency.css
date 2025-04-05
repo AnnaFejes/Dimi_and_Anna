@@ -430,6 +430,16 @@ header .heading-desktop {
     display: none;
 }
 
+.heading-desktop {
+    display: none;
+}
+
+@media(min-width:768px) {
+    .heading-mobile {
+        display: none;
+    }    
+}
+
 @media(min-width:768px) {
 	header {
     text-align: center;
@@ -454,6 +464,12 @@ header .heading-desktop {
     
     header .heading-mobile {
     display: none;
+    }
+
+    header .intro-detail {
+        font-family: 'Great Vibes', cursive;
+        text-shadow: 2px 2px 4px #000000;
+        font-size: 30px;
     }
 
     header .intro-text {

@@ -380,10 +380,18 @@ header .intro-text {
 }
 
 .sub-intro {
-    color: #{{ site.data.template.color.secondary }};
+    color: #{{ site.data.template.color.primary }};
     text-align: center;
-    font-size: 30px;
     font-family: 'Lato';
+}
+
+@media(min-width:768px) {
+    .sub-intro {
+        color: #{{ site.data.template.color.primary }};
+        text-align: center;
+        font-size: 18px;
+        font-family: 'Lato';
+    }
 }
 
 header .intro-text .intro-lead-in {

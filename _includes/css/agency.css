@@ -658,7 +658,7 @@ section h3.section-subheading {
 .timeline-image img {
     width: 80%; /* adjust down to leave space between img and border */
     height: 80%;
-    border-radius: 50%;
+    /*border-radius: 50%;*/
     object-fit: cover;
 }
 

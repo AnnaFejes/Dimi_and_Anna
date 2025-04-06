@@ -371,7 +371,7 @@ header {
 
 header .intro-text {
     padding-top: 100px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 header .intro-text .intro-lead-in {
@@ -640,8 +640,8 @@ section h3.section-subheading {
     z-index: 100;
     position: absolute;
     left: 0;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     margin-left: 0;
     border: 7px solid #f1f1f1;
     border-radius: 100%;

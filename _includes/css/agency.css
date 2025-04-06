@@ -649,15 +649,15 @@ section h3.section-subheading {
     overflow: hidden;
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
     text-align: center;
     color: #fff;
     background-color: #fff;
 }
 
 .timeline-image img {
-    width: 80%; /* adjust down to leave space between img and border */
-    height: 80%;
+    width: 50%; /* adjust down to leave space between img and border */
+    height: 50%;
     /*border-radius: 50%;*/
     object-fit: cover;
 }

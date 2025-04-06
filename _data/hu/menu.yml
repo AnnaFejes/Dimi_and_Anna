@@ -1,15 +1,17 @@
 - name: Vegetáriánus
-  starter: Vegyes zöldsaláta sajttal, gránátalma szósszal, szárított paradicsommal és magvakkal
   main: Cukkini tekercs Philadelphia lágy sajttal és Aioli szósszal
 
 - name: Pulyka
-  starter: Vegyes zöldsaláta sajttal, gránátalma szósszal, szárított paradicsommal és magvakkal
   main: Szaftos pulykafilé, hollandi szósszal és fekete rizzsel körítve
 
+- name: Csirke
+  main: Rántott csirke mogyoróvajjal, pürével és erdei gombával
+
+- name: Sertés 1
+  main: Szaftos sertés bordaszelet karamellizált hagymával és zöldségekkel
+
 - name: Marha
-  starter: '"Caprese" saláta rukkolával'
   main: Kladnitsa gombás fasírt parmezánnal és tejmártással
 
-- name: Sertés
-  starter: '"Caprese" saláta rukkolával'
+- name: Sertés 2
   main: Sertés bon filé paprika szósszal és körettel

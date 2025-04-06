@@ -464,6 +464,7 @@ header .heading-desktop {
         text-align: center;
         font-size: 35px;
         font-family: 'Great Vibes', cursive;
+        padding-top: 20px;
     }
 }
 
@@ -592,10 +593,10 @@ section h3.section-subheading {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 40px;
+    left: 30px;
     width: 2px;
     margin-left: -1.5px;
-    background-color: #f1f1f1;
+    background-color: #{{ site.data.template.color.secondary }};
 }
 
 .timeline>li {
@@ -642,8 +643,8 @@ section h3.section-subheading {
     left: 0;
     width: 60px;
     height: 60px;
-    margin-left: 0;
-    border: 7px solid #f1f1f1;
+    margin-left: 0 px; /*original value was 0*/
+    border: 5px solid #{{ site.data.template.color.secondary }};
     border-radius: 100%;
     text-align: center;
     color: #fff;
@@ -713,9 +714,9 @@ section h3.section-subheading {
 
     .timeline>li .timeline-image {
         left: 50%;
-        width: 100px;
-        height: 100px;
-        margin-left: -50px;
+        width: 80px;
+        height: 80px;
+        margin-left: -40px;
     }
 
     .timeline>li .timeline-image h4 {

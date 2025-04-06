@@ -1,15 +1,17 @@
 - name: Vegetarian
-  starter: Mixed green salad with cheese, pomegranate sauce, dried tomato and seeds
   main: Zucchini rolls with Philadelphia soft cheese and Aioli sauce
 
 - name: Turkey
-  starter: Mixed green salad with cheese, pomegranate sauce, dried tomato and seeds
   main: Tender turkey fillet, garnished with Hollandaise sauce and black rice
 
+- name: Chicken
+  main: Breaded chicken with peanut butter, with pure and wild mushrooms
+
+- name: Pork 1
+  main: Cutlets with caramelised onion, gravy and vegetables
+
 - name: Beef
-  starter: '"Caprese" salad with arugula'
   main: Kladnitsa mushroom meatballs with parmesan and milk sauce
 
-- name: Pork
-  starter: '"Caprese" salad with arugula'
+- name: Pork 2
   main: Pork bon fillet with Pepper sauce and garnish

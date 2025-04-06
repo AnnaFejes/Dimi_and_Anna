@@ -464,7 +464,8 @@ header .heading-desktop {
         text-align: center;
         font-size: 35px;
         font-family: 'Great Vibes', cursive;
-        padding-top: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 }
 
@@ -731,8 +732,8 @@ section h3.section-subheading {
     }
 
     .timeline>li .timeline-image img {
-        width: 90%; /* adjust down to leave space between img and border */
-        height: 90%;
+        width: 75%; /* adjust down to leave space between img and border */
+        height: 75%;
         border-radius: 0 !important;
         object-fit: cover;
     }

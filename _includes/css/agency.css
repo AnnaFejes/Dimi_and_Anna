@@ -656,9 +656,9 @@ section h3.section-subheading {
 }
 
 .timeline-image img {
-    width: 50%; /* adjust down to leave space between img and border */
-    height: 50%;
-    border-radius: 0;
+    width: 90%; /* adjust down to leave space between img and border */
+    height: 90%;
+    border-radius: 0 !important;
     object-fit: cover;
 }
 

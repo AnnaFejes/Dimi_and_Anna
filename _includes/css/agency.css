@@ -843,6 +843,10 @@ section#menu .section-subheader {
     font-weight: 400;
 }
 
+section#menu .choice-of {
+    font-style: italic;
+}
+
 section#menu .menu-divider {
     margin-bottom: 25px;
 }

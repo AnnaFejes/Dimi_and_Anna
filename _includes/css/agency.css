@@ -834,6 +834,19 @@ aside.clients img {
 
 /*Menu items*/
 
+section#menu .section-subheader {
+    margin-bottom: 25px;
+    text-transform: none;
+    font-family: {{ site.data.template.font.secondary }};
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+section#menu .menu-divider {
+    margin-bottom: 25px;
+}
+
 .plist {
     font-size: 14px;
     white-space: pre-wrap; /* CSS3 */    

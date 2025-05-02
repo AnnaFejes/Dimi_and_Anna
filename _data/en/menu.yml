@@ -1,17 +1,8 @@
-- name: Vegetarian
-  main: Zucchini rolls with Philadelphia soft cheese and Aioli sauce
-
 - name: Turkey
   main: Tender turkey fillet, garnished with Hollandaise sauce and black rice
 
-- name: Chicken
-  main: Breaded chicken with peanut butter, with pure and wild mushrooms
-
-- name: Pork 1
-  main: Cutlets with caramelised onion, gravy and vegetables
-
-- name: Beef
-  main: Kladnitsa mushroom meatballs with parmesan and milk sauce
-
-- name: Pork 2
+- name: Pork
   main: Pork bon fillet with Pepper sauce and garnish
+
+- name: Vegetarian
+  main: Fried cheese with sides

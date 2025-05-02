@@ -1,17 +1,8 @@
-- name: Vegetáriánus
-  main: Cukkini tekercs Philadelphia lágy sajttal és Aioli szósszal
-
 - name: Pulyka
   main: Szaftos pulykafilé, hollandi szósszal és fekete rizzsel körítve
 
-- name: Csirke
-  main: Rántott csirke mogyoróvajjal, pürével és erdei gombával
-
-- name: Sertés 1
-  main: Szaftos sertés bordaszelet karamellizált hagymával és zöldségekkel
-
-- name: Marha
-  main: Kladnitsa gombás fasírt parmezánnal és tejmártással
-
-- name: Sertés 2
+- name: Sertés
   main: Sertés bon filé paprika szósszal és körettel
+
+- name: Vegetáriánus
+  main: Rántott sajt körettel

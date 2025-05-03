@@ -569,7 +569,6 @@ section h3.section-subheading {
     font-family: {{ site.data.template.font.secondary }};
     font-size: 16px;
     font-style: italic;
-    min-height: 50px;
 }
 
 #portfolio * {
@@ -580,6 +579,10 @@ section h3.section-subheading {
     #portfolio .portfolio-item {
         margin: 0 0 30px;
     }
+}
+
+#portfolio .portfolio-bg {
+    min-height: 80px;
 }
 
 /*Events page*/

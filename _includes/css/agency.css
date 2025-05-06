@@ -505,17 +505,17 @@ header .heading-desktop {
     color: #{{ site.data.template.color.muted }};
 }
 
-#timer div:not(:last-child)::after {
+/*#timer div:not(:last-child)::after {
     content: "";
     display: inline-block;
-    margin: 0 8px; /* Space between numbers and hearts */
+    margin: 0 8px; /* Space between numbers and hearts 
 }
 
 #timer div:not(:last-child) .heart {
     color: #{{ site.data.template.color.primary }};
     font-size: 14px;
     margin-top: 5px;
-}
+}*/
 
 /*For all sections*/
 

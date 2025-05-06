@@ -487,6 +487,12 @@ header .heading-desktop {
     font-size: 16px;
 }
 
+.timer-subheader {
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+    color: #{{ site.data.template.color.primary }};
+}
+
 .timer-value {
     font-size: 28px;
     font-weight: bold;
@@ -494,22 +500,22 @@ header .heading-desktop {
 
 .timer-label {
     margin-top: 5px;
-    font-size: 14px;
-    font-family: 'Great Vibes', cursive;
+    font-size: 16px;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #{{ site.data.template.color.muted }};
 }
 
-#timer div:not(:last-child)::after {
+/*#timer div:not(:last-child)::after {
     content: "";
     display: inline-block;
-    margin: 0 8px; /* Space between numbers and hearts */
+    margin: 0 8px; /* Space between numbers and hearts 
 }
 
 #timer div:not(:last-child) .heart {
     color: #{{ site.data.template.color.primary }};
     font-size: 14px;
     margin-top: 5px;
-}
+}*/
 
 /*For all sections*/
 

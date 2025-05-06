@@ -510,7 +510,7 @@ color: #{{ site.data.template.color.muted }};
 .heart-divider {
 color: #{{ site.data.template.color.primary }};
 font-size: 14px;
-margin: 0 8px;
+margin: 0 0px;
 align-self: center;
 }
 
@@ -519,6 +519,7 @@ align-self: center;
         font-family: 'Great Vibes', cursive;
         font-size: 35px;
         color: #{{ site.data.template.color.primary }};
+        padding-top: 0px;
     }
 
     .timer-value {

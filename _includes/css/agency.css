@@ -490,40 +490,56 @@ header .heading-desktop {
 
 .timer-subheader {
     font-family: 'Great Vibes', cursive;
-    font-size: 40px;
+    font-size: 30px;
     color: #{{ site.data.template.color.primary }};
+    padding-top: 30px;
 }
 
 .timer-value {
-    font-size: 40px;
-    font-weight: bold;
+font-size: 30px;
+font-weight: bold;
 }
 
 .timer-label {
-    margin-top: 5px;
-    font-size: 16px;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: #{{ site.data.template.color.muted }};
+margin-top: 5px;
+font-size: 16px;
+font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+color: #{{ site.data.template.color.muted }};
 }
 
 .heart-divider {
-    color: #{{ site.data.template.color.primary }}; /* Custom primary color */
-    font-size: 14px; /* Adjust heart size */
-    margin: 0 8px; /* Space between numbers and hearts */
-    align-self: center; /* Vertically center the heart between time units */
+color: #{{ site.data.template.color.primary }};
+font-size: 14px;
+margin: 0 8px;
+align-self: center;
 }
 
-/*#timer div:not(:last-child)::after {
-    content: "";
-    display: inline-block;
-    margin: 0 8px; /* Space between numbers and hearts 
-}
+@media(min-width:768px) {
+    .timer-subheader {
+        font-family: 'Great Vibes', cursive;
+        font-size: 35px;
+        color: #{{ site.data.template.color.primary }};
+    }
 
-#timer div:not(:last-child) .heart {
-    color: #{{ site.data.template.color.primary }};
-    font-size: 14px;
-    margin-top: 5px;
-}*/
+    .timer-value {
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .timer-label {
+        margin-top: 5px;
+        font-size: 16px;
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        color: #{{ site.data.template.color.muted }};
+    }
+
+    .heart-divider {
+        color: #{{ site.data.template.color.primary }};
+        font-size: 14px;
+        margin: 0 8px;
+        align-self: center;
+    }
+}
 
 /*For all sections*/
 

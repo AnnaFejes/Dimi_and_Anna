@@ -478,7 +478,6 @@ header .heading-desktop {
     display: flex;
     justify-content: center;
     gap: 20px;
-    /*flex-wrap: wrap;*/
 }
 
 #timer div {
@@ -496,7 +495,13 @@ header .heading-desktop {
 #timer p {
     margin-top: 5px;
     font-size: 14px;
-    text-transform: capitalize;
+    font-family: 'Great Vibes', cursive;
+}
+
+#timer div:not(:last-child)::after {
+    content: "";
+    display: inline-block;
+    margin: 0 8px; /* Space between numbers and hearts */
 }
 
 #timer div:not(:last-child) .heart {

@@ -487,15 +487,16 @@ header .heading-desktop {
     font-size: 16px;
 }
 
-#timer span {
+.timer-value {
     font-size: 28px;
     font-weight: bold;
 }
 
-#timer p {
+.timer-label {
     margin-top: 5px;
     font-size: 14px;
     font-family: 'Great Vibes', cursive;
+    color: #{{ site.data.template.color.muted }};
 }
 
 #timer div:not(:last-child)::after {

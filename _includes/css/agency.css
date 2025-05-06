@@ -472,6 +472,7 @@ header .heading-desktop {
 /*For the Countdown Section*/
 #countdown {
     text-align: center;
+    padding-top: 30px;
 }
 
 #timer {
@@ -494,7 +495,7 @@ header .heading-desktop {
 }
 
 .timer-value {
-    font-size: 28px;
+    font-size: 40px;
     font-weight: bold;
 }
 
@@ -503,6 +504,13 @@ header .heading-desktop {
     font-size: 16px;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #{{ site.data.template.color.muted }};
+}
+
+.heart-divider {
+    color: #{{ site.data.template.color.primary }}; /* Custom primary color */
+    font-size: 14px; /* Adjust heart size */
+    margin: 0 8px; /* Space between numbers and hearts */
+    align-self: center; /* Vertically center the heart between time units */
 }
 
 /*#timer div:not(:last-child)::after {
